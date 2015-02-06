@@ -1,0 +1,41 @@
+{
+  "uri" : "local://YIhTbLavpfBfKqE0XYSGC6/",
+  "name" : "Unit 3: Adding a JS resource",
+  "category" : "unit",
+  "parent" : "local://61VaKe6zRtAdYqlaAgHs2E/",
+  "pname" : "Course 100",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "Adding a JS resource"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<h3>Adding client-side Javascript into Hello World</h3>\n\n<p>In the previous unit, we created a CSS resource concept and included it in the \"Hello World\" concept. In this unit, you can add a Javascript resource to that page by following these steps: <ol>\n<li>Open the Hello World concept in the IDE mode. \n<li>Open the Finder using the navigation bar on the top right. \n<li>Select the Hello World concept in the Finder, and use the Add button, on the panel to its right, to add a \"New Javascript\" under the concept. \n<li>In the viewer, set the file name to \"hello-world.js\" and enter the following Javascript content into the text box. \n<pre>\n$(function() {\n  $(\"h1\").animate({ \"fontSize\": \"8em\" }, 5000);\n});\n</pre>\n<li>Save the changes in the Viewer. \n<li>Click the <span class=\"fa fa-bars\"></span> next to \"My Second Concept\" in the Finder, and select the \"Edit\" option to open the concept in the Editor. \n<li>Refactor the concept in the Editor, by moving the HTML defined within the <tt>page</tt> property to a simple property in the concept, using the following steps: <ol type=\"a\">\n  <li>Add a simple property in \"My Second Concept\" called <tt>html</tt> using the Add button next to \"Simple Properties\". \n  <li>Set the property name to \"html\", its type to <span class=\"fa conceptjs-font conjs-var-string\"></span> String, its mode to \"HTML mode\", and the value to the html specified in the <tt>page</tt> property. \n  <li>Drag-and-drop the <tt>html</tt> property in the Simple Properties section to rearrange it to be defined before the <tt>page</tt> property. \n  <li>Change the page's html property from a String to a property value (<span class=\"fa conceptjs-font conjs-var-icon\"></span> <span class=\"fa fa-long-arrow-right\"></span> <span class=\"fa conceptjs-font conjs-var-string\"></span>) and set the property to be looked up as <tt>html</tt>. \n</ol>\n<li>Save the changes made during the refactoring.\n<li>Copy the resource URI of the Javascript resource shown in the Viewer using the Ctrl-C (Windows, Linux) or Command-C (Mac) keystrokes. \n<li>Back in the Editor, change the <tt>html</tt> property as shown below, and save the changes. \n<pre>\n&lt;head&gt;...&lt;/head&gt;\n&lt;body&gt;\n  ...\n  &lt;script src=\"[ENTER RESOURCE URI]\" type=\"text/javascript\"&gt;&lt;/script&gt;\n&lt;/body&gt;\n</pre>\n<li>Use the <span class=\"fa fa-bars\"></span> menu next to \"My Second Concept\" in the Editor's header to view the updated Hello World concept. You should now see the animated version of the Hello World. \n</ol>\n\n<p>The following video demonstrates the steps outlined above: \n\n<hr>\n<iframe src=\"//fast.wistia.net/embed/iframe/1snigjj3bc?videoFoam=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width=\"854\" height=\"463\"></iframe><script src=\"//fast.wistia.net/assets/external/iframe-api-v1.js\"></script>\n<hr>\n\n<h3>How it works</h3>\n\n<p>The Javascript resource concept works similar to the CSS resource concept. You can open the Javascript concept in the Debugger to see how it establishes indirect is-a relationships to the following core concepts: <ol>\n<li>Web Resource: This ensures that the /resource/... URL delivers the Javascript with the correct content type. \n<li>Named Resource: This ensures that the concept is renamed to the given filename.\n<li>HTML Page: This provides the user interface based on the ACE editor to edit the Javascript content outside the IDE. \n</ol>\n\n<p>The following video shows how you can use the debugger to understand the internals of the JS resource concept. \n\n<hr>\n<iframe src=\"//fast.wistia.net/embed/iframe/ey5vmx4psm?videoFoam=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width=\"854\" height=\"463\"></iframe><script src=\"//fast.wistia.net/assets/external/iframe-api-v1.js\"></script>\n<hr>\n\n<h3>Using Javascript from CDNs</h3>\n\n<p>The easiest way to add external Javascript references is to link your HTML to a publicly available URL from a CDN (content delivery network), such as maxcdn or cdnjs. For example, you can include the code for moment.js by adding this line to your HTML. \n<pre>\n  &lt;script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n</pre>\n\n<h3>Recap</h3>\n\n<ul class=\"recap\">\n<li>The Finder supports an Add Javascript resource option that lets you create your own JS resources. \n<li>JS resource concepts can be edited in the presentation mode, or using the viewer or editor in the IDE. \n<li>Like CSS resources, you can link Javascript resources using their resource URI, which is formed by '/resource' followed by the concept URI. The easiest way to access the resource URI is to look at the JS resource concept in the viewer or in presentation mode. \n<li>If the Javascript file is accessible in a CDN, you can directly include the URL in the &lt;head&gt; tag of the HTML page. \n</ul>\n\n<p>In the next unit, we will add some data elements to the Hello World page. \n"
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 3
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "bL8DQ9uYuPe5aiavyO4h3g=="
+}

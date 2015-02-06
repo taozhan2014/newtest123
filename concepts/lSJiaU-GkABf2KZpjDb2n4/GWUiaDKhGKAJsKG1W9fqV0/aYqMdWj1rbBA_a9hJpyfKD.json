@@ -1,0 +1,40 @@
+{
+  "uri" : "local://aYqMdWj1rbBA_a9hJpyfKD/",
+  "name" : "Course View",
+  "category" : ".view",
+  "parent" : "local://GWUiaDKhGKAJsKG1W9fqV0/",
+  "pname" : "Course",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "model",
+    "type" : "local://GWUiaDKhGKAJsKG1W9fqV0/",
+    "typeName" : "Course"
+  } ],
+  "vars" : [ {
+    "name" : "htmlTemplate",
+    "expr" : {
+      "str" : "<html>\n  <head>\n    <script type=\"text/javascript\" src=\"js/knockout-3.2.0.js\"></script> \n    <script type=\"text/javascript\" src=\"js/ace/ace.js\"></script>\n    <script type=\"text/javascript\" src=\"js/ace/ext-static_highlight.js\"></script>\n    <script type=\"text/javascript\" src=\"js/knockout-ace.js\"></script>\n\n    <style>\n      .aceEditor {\n          width: 90%;\n          height: 500px;\n      }\n      h1, h3 {\n          color: gray;\n      }\n    </style>\n  </head>\n\n  <body class=\"container-fluid\">\n    <div class=\"col-xs-1 col-sm-1 col-md-2 col-lg-3\"></div>\n    \n    <div class=\"col-xs-10 col-sm-10 col-md-8 col-lg-6\">\n      <h1>Course</h1>\n\n      <h3>Edit Details</h3>\n      <form class=\"form-horizontal\" role=\"form\">\n        <div class=\"form-group\">\n          <label class=\"control-label col-xs-4 col-md-2\" for=\"unitNumber\">Course Number</label>\n          <div class=\"col-xs-8 col-md-10\">\n            <input type=\"text\" class=\"form-control\" data-bind=\"textInput: courseNumber\">\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <label class=\"control-label col-xs-4 col-md-2\" for=\"unitName\">Course Name</label>\n          <div class=\"col-xs-8 col-md-10\">\n            <input type=\"text\" class=\"form-control\" data-bind=\"textInput: courseName\">\n          </div>\n        </div>\n      </form>\n\n      <h3>Edit HTML description</h3>\n      <textarea rows=\"10\" class=\"form-control\" data-bind=\"textInput: courseDesc\"></textarea>\n\n      <h3>Units</h3>\n      \n      <ol data-bind=\"foreach: sortedUnits\">\n        <li><a data-bind=\"text: name, attr: {href: url}\"></a></li>\n      </ol>\n    </div>\n\n    <div class=\"col-xs-1 col-sm-1 col-md-2 col-lg-3\"></div>\n\n    <script>\n      var modelUri = \"{{{modelUri}}}\";\n      var anchorUri = \"{{{anchorUri}}}\";\n      \n        function UnitModel(searchResult, courseModel){\n            var self = this;\n    \n            this.number = ko.observable(searchResult._source.number);\n            this.name = ko.observable(searchResult._source.name);\n            this.url = ko.computed(function(){\n                return \"/view\"+(searchResult._source.uri);\n            }, this);\n        }\n\n      function CourseModel() {\n        var self = this;\n        var cvm = $cjs.ko(modelUri);\n        \n        this.courseNumber = cvm.number;\n        this.courseName = cvm.name;\n        this.courseDesc = cvm.description;\n        \n        this.sortedUnits = ko.observableArray();\n        \n        $cjs.search({\n            uri: 'local://W8tRt7aonl93wKv3aGEkD8/',\n            queryJson: {\n                \"term\" : {\n                    \"courseNumber\" : this.courseNumber()\n                }\n            },\n            sortJson: [{\"field\" : \"number\", \"order\" : \"ASC\"}],\n            done : function(data){\n                //console.log(\"search data:\"+JSON.stringify(data));\n                if (data.hits.total > 0){ \n                    _.each(data.hits.hits, function(x){\n                        self.sortedUnits.push(new UnitModel(x, self));\n                    });\n                }\n            },\n            fail : function(jqXHR, textStatus, errorThrown){\n                console.log(\"search course units failed, status:\" + textStatus + \", error:\" + errorThrown + \", server response:\" + ((jqXHR.responseText)?jqXHR.responseText:\"\"));\n            }\n        });\n      }\n\n      ko.applyBindings(new CourseModel());\n    </script>\n  </body>\n</html>",
+      "strEditMode" : "html"
+    }
+  }, {
+    "name" : "_page_propertyMap",
+    "expr" : {
+      "script" : "return {\"modelUri\": model.uri(), \"anchorUri\": model.anchor().uri()};"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/Xfh2VQ4HSK9klqbqqR-eBB/",
+      "conceptName" : "Mustache HTML Page",
+      "bindings" : {
+        "htmlTemplate" : "htmlTemplate",
+        "propertyMap" : "_page_propertyMap"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : true,
+  "digest" : "pJaMUp1QpKg63je7Ol2e0A=="
+}

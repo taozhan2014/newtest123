@@ -1,0 +1,35 @@
+{
+  "uri" : "local://R9w059xRRZATrqwm4vR5i2/",
+  "name" : "About Programmer v2 (Wiki Page)",
+  "category" : ".about",
+  "parent" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
+  "pname" : "Programmer v2",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_page_title",
+    "expr" : {
+      "str" : "About Programmer v2"
+    }
+  }, {
+    "name" : "_page_content",
+    "expr" : {
+      "str" : "<p>A lambda-concept that captures details about a programmer and renders them in a simple HTML page.&nbsp;</p>"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/h1osNTK5b5AkAafQ9UVEl6/",
+      "conceptName" : "Wiki Page",
+      "bindings" : {
+        "title" : "_page_title",
+        "content" : "_page_content"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false,
+  "digest" : "X1i29iXPZGpgnMP9AcPOGw=="
+}

@@ -1,0 +1,41 @@
+{
+  "uri" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
+  "name" : "Course 101",
+  "category" : "course",
+  "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
+  "pname" : "Root Concept for univ",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_course_number",
+    "expr" : {
+      "str" : "101"
+    }
+  }, {
+    "name" : "_course_name",
+    "expr" : {
+      "str" : "The ConceptJS platform"
+    }
+  }, {
+    "name" : "_course_description",
+    "expr" : {
+      "str" : "This hands-on introductory course covers the following topics: <ol>\n  <li>The key features of the ConceptJS cloud computing platform</li>\n  <li>The concept model and how it works</li>\n  <li>Core concepts supported by the platform</li>\n  <li>The Javascript APIs to access and operate on concepts</li>\n</ol>\n"
+    }
+  }, {
+    "name" : "course",
+    "expr" : {
+      "concept" : "local://GWUiaDKhGKAJsKG1W9fqV0/",
+      "conceptName" : "Course",
+      "bindings" : {
+        "number" : "_course_number",
+        "name" : "_course_name",
+        "description" : "_course_description"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "course"
+  } ],
+  "isLambda" : false,
+  "digest" : "HIQwHJ7b06Rm8LNnPMal3Q=="
+}

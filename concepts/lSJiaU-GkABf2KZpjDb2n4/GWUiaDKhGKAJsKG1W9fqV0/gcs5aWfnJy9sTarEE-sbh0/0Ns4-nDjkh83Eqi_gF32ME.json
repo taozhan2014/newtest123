@@ -1,0 +1,41 @@
+{
+  "uri" : "local://0Ns4-nDjkh83Eqi_gF32ME/",
+  "name" : "Unit 3: All done now",
+  "category" : "unit",
+  "parent" : "local://gcs5aWfnJy9sTarEE-sbh0/",
+  "pname" : "Example Course",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "All done now"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<h1>Tweet this</h1>\n\n"
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 3
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "oxt7WpH4NA1TAKJKBNrGfg=="
+}

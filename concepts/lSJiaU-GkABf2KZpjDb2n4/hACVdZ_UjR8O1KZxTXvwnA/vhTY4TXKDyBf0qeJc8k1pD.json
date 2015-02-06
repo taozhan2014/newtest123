@@ -1,0 +1,30 @@
+{
+  "uri" : "local://vhTY4TXKDyBf0qeJc8k1pD/",
+  "name" : "Example showing a proxy method",
+  "category" : "",
+  "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
+  "pname" : "Course 101",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "counter",
+    "expr" : {
+      "num" : 18
+    }
+  }, {
+    "name" : "lastUser",
+    "expr" : {
+      "str" : "",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "lastComment",
+    "expr" : {
+      "str" : "Check this out"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false,
+  "activeScript" : "{\n  foo: function(comment) {\n      //home.prop('lastUser').val($cjs.currentUser);\n      home.prop('lastComment').val(comment);\n      var counter = home.prop('counter').val() + 1;\n      home.prop('counter').val(counter);\n      return {\"counter\": counter, \"lastComment\": comment};\n  }\n}\n",
+  "digest" : "tRaYpGXMEehXoREolVn30g=="
+}

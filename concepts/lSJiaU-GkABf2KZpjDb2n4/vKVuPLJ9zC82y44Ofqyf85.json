@@ -1,0 +1,76 @@
+{
+  "uri" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+  "name" : "Course Unit",
+  "category" : "",
+  "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
+  "pname" : "Root Concept for univ",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "name",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  }, {
+    "name" : "content",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  }, {
+    "name" : "number",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
+    "typeName" : "number"
+  } ],
+  "vars" : [ {
+    "name" : "_namedConcept_name",
+    "expr" : {
+      "script" : "return \"Unit \" + number + \": \" + home.prop('name').val();"
+    }
+  }, {
+    "name" : "namedConcept",
+    "expr" : {
+      "concept" : "/common/core/qE-eyN-QBBBJuqiaFW-2l1/",
+      "conceptName" : "Named Concept",
+      "bindings" : {
+        "name" : "_namedConcept_name"
+      }
+    }
+  }, {
+    "name" : "courseNumber",
+    "expr" : {
+      "script" : "return home.anchor().parent().as('local://GWUiaDKhGKAJsKG1W9fqV0/').prop('number').val();"
+    }
+  }, {
+    "name" : "courseName",
+    "expr" : {
+      "script" : "return home.anchor().parent().as('local://GWUiaDKhGKAJsKG1W9fqV0/').prop('name').val();"
+    }
+  }, {
+    "name" : "isCJSCourse",
+    "expr" : {
+      "script" : "return home.anchor().parent().parent().uri() == \"local://lSJiaU-GkABf2KZpjDb2n4/\";"
+    }
+  }, {
+    "name" : "_index_type",
+    "expr" : {
+      "concept" : "local://W8tRt7aonl93wKv3aGEkD8/",
+      "conceptName" : "Course Unit Index Type"
+    }
+  }, {
+    "name" : "index",
+    "expr" : {
+      "concept" : "/common/core/0mSE4ISzLM8fkKj3BVBy7A/",
+      "conceptName" : "Lucene Index Entry",
+      "bindings" : {
+        "type" : "_index_type"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "concept" : "local://N7dkAN11eeAsMKzVtAHe7E/",
+    "conceptName" : "Course Unit View"
+  }, {
+    "var" : "namedConcept"
+  }, {
+    "var" : "index"
+  } ],
+  "isLambda" : true,
+  "digest" : "+jWn+JBsMAIfupC0Zjxeuw=="
+}

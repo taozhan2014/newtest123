@@ -1,0 +1,41 @@
+{
+  "uri" : "local://EcbDfbUejoAT2KYAaj7buA/",
+  "name" : "Unit 1: Introduction",
+  "category" : "unit",
+  "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
+  "pname" : "Course 101",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "Introduction"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<blockquote>\n<p>Sunlight is the best disinfectant.\n\n<footer>U.S. Supreme Court Justice Louis Brandeis</footer>\n</blockquote>\n\n<h3>What is our mission?</h3>\n\n<p>Our mission is to build an open, transparent digital world where anyone can build, use and share information applications. We want every user to have the opportunity to understand and contribute to the information systems they use. Think of visiting your Facebook wall, and with the click of a button changing the code that shows you that wall. This is what an application built on ConceptJS will let you do. \n\n<div class=\"well sidenote\">\n<i>Curious?</i> You can click \"Edit in IDE\" link at the bottom of the page to view the code and data behind this page. We will cover the IDE in later sections. You can click the Back button in your browser to return to this page. \n</div>\n\n<p>Traditional software architectures, based on layers within silo-ed stacks, are not well suited for open participation. Even popular open-source projects have very few core contributors compared to the number of users. Why is this the case? Wasn't the open-source movement supposed let us \"touch and feel\" the code that we use? The problem is that large monolithic code-bases are difficult to learn, even for experts. \n\n<p><b>Our minds work differently from computers. </b>We think in terms of <i>concepts</i> &mdash; ideas that have a shared and common understanding &mdash; not in terms of records, functions, variables, call stacks and so on. ConceptJS is a radically simpler way to manage digital information that is based on how you <i>think</i>, not what your computer can do. \n\n<hr>\n\n<h3>How does ConceptJS work?</h3>\n\n<div class=\"well sidenote\">\n<p><i>More examples: </i> The current unit is modeled as a concept called <a href=\"/viewlocal://EcbDfbUejoAT2KYAaj7buA/\" target=\"_blank\">Unit 1: Introduction <i class=\"fa fa-external-link\"></i></a>, and the course itself is modeled as a concept called <a href=\"/viewlocal://hACVdZ_UjR8O1KZxTXvwnA/\" target=\"_blank\">Course 101 <i class=\"fa fa-external-link\"></i></a>. The concept you are seeing now is a \"course reader\" that keeps track of your settings and the unit you are reading. \n</div>\n\n<p>ConceptJS is very different from other cloud computing platforms. Our users are not allotted virtual machines where they can build their own  application silos. There are no private databases assigned per application. Instead everything is shared &mdash; code, data, CPU, memory and disk space. You will actually be building one big open shared application for everyone to use. So how does this work? \n\n<p><b>Almost everything in ConceptJS is a concept. </b>The page that you are reading right now is a concept. Concepts can capture both your code and data. Concepts are organized as repositories. You, as a user, can create one or more repositories in your account. \n\n<p>If you have a background in Computer Science, you are probably wondering what happens to records, files, scripts, HTML templates, indexes, classes, interfaces, etc. Well, all of these become concepts! The \"concept model\", discussed in the next few units, replaces a whole lot of other computing abstractions. \n\n<hr>\n\n<h3>Key features</h3>\n\n<p>ConceptJS is a social cloud computing platform that encourages everyone to participate in information technology. The key features of ConceptJS are as follows: \n\n<ol>\n<li><b>Zero setup</h1></b>: You can build, host and run applications in ConceptJS with your browser. No software set up is necessary. \n<li><b>Server-side Javascript</b>: Javascript is the only programming language you need to know. The server-side is based on the \"concept model\" which allows the use of Javascript expressions. The client-side can employ any Web technology (HTML, CSS and Javascript). The client and server-side Javascript APIs are nearly identical. \n<li><b>Web 3.0 ready</b>: Every page in your application will be machine readable. Your concepts can access information from concepts developed by others and vice-versa. \n<li><b>User programmable</b>: You can view the code behind applications built by others. You can even re-program the code if the owner gives you access to his/her repository. \n<li><b>Sharing and reuse</b>: During the Beta phase, everything you develop will be available to everyone else. You can reuse concepts built by others, and others can benefit from concepts that you create. \n</ol>\n\n<hr>\n\n<h3>What can I do with ConceptJS?</h3>\n\n<p>ConceptJS is still in a very early stage of development. During the Beta phase (till mid 2015), all user contributions will be available to others in the <a href=\"https://creativecommons.org/about/cc0\" target=\"_blank\">CC0 license</a> (public domain). Our plan is to host CC0 licensed concepts for free even after the Beta period. \n\n<p>You can help our effort in several ways: \n<ul>\n<li><b>Build something:</b> Build anything from a time-tracking application to a scientific taxonomy in ConceptJS. \n<li><b>Bring data to life:</b> Bring an open dataset (CC0-licensed) to life by turning it into concepts. Your concepts will be available to others to build various applications and mashups. \n<li><b>Invite others: </b> Work in groups and invite other users to join your project. \n<li><b>Spread the word:</b> Publicize your repositories and concepts through Facebook and Twitter. \n</ul>\n\nPlease feel free to email <i>info@lambdazen.com</i> with your ideas, suggestions or feedback. \n"
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 1
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "GaL+QsTh56PWegVo5LaPNg=="
+}

@@ -1,0 +1,51 @@
+{
+  "uri" : "local://uzXc8Y_YQ9BHZ4-tcdSOsD/",
+  "name" : "James Gosling v3",
+  "category" : "",
+  "parent" : "local://hWApMtguPa8DJKFW6cETK5/",
+  "pname" : "Unit 5: Is-a relationships",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_programmer_firstName",
+    "expr" : {
+      "str" : "James",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_programmer_lastName",
+    "expr" : {
+      "str" : "Gosling",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_programmer_bio",
+    "expr" : {
+      "str" : "James Arthur Gosling, OC (born May 19, 1955) is a Canadian computer scientist, best known as the father of the Java programming language. He created the original design of Java and implemented the language's original compiler and virtual machine.[18] Gosling traces the origins of the approach to his early graduate-student days, when he created a pseudo-code (p-code) virtual machine for the lab's DEC VAX computer, so that his professor could run programs written in UCSD Pascal. Pascal compiled into p-code to foster precisely this kind of portability. In the work leading to Java at Sun, he saw that architecture-neutral execution for widely distributed programs could be achieved by implementing a similar philosophy: always program for the same virtual machine.",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_programmer_imageUrl",
+    "expr" : {
+      "str" : "http://upload.wikimedia.org/wikipedia/commons/thumb/1/14/James_Gosling_2008.jpg/220px-James_Gosling_2008.jpg",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "programmer",
+    "expr" : {
+      "concept" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
+      "conceptName" : "Programmer v2",
+      "bindings" : {
+        "firstName" : "_programmer_firstName",
+        "lastName" : "_programmer_lastName",
+        "bio" : "_programmer_bio",
+        "imageUrl" : "_programmer_imageUrl"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "programmer"
+  } ],
+  "isLambda" : false,
+  "digest" : "4S8+Zti/zA1ubVzc0xfr+w=="
+}

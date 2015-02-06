@@ -1,0 +1,40 @@
+{
+  "uri" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
+  "name" : "Programmer v2",
+  "category" : "",
+  "parent" : "local://hWApMtguPa8DJKFW6cETK5/",
+  "pname" : "Unit 5: Is-a relationships",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "firstName",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  }, {
+    "name" : "lastName",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  }, {
+    "name" : "bio",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  }, {
+    "name" : "imageUrl",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  } ],
+  "vars" : [ {
+    "name" : "fullName",
+    "expr" : {
+      "script" : "return firstName + ' ' + lastName;"
+    }
+  } ],
+  "isas" : [ {
+    "concept" : "local://sgklo11o2YAkQKY9PxovS8/",
+    "conceptName" : "Programmer v2 View"
+  }, {
+    "concept" : "local://MJEJcO98f19XvqVJoaoFb5/",
+    "conceptName" : "Programmer v2 RDF"
+  } ],
+  "isLambda" : true,
+  "digest" : "TxykxBlVOHCCfK1mPzryxQ=="
+}

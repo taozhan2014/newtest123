@@ -1,0 +1,41 @@
+{
+  "uri" : "local://eHJWijpBtL8fu4fnpLDnX5/",
+  "name" : "Example Course Unit",
+  "category" : ".example",
+  "parent" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+  "pname" : "Course Unit",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "Introduction to my course"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<h1>Let's do something different now...</h1>\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 0
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "ba//dHIorRThvvFyuED4qg=="
+}

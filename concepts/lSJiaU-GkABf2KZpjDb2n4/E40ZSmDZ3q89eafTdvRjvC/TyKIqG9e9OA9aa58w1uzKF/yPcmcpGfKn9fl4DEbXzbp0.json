@@ -1,0 +1,47 @@
+{
+  "uri" : "local://yPcmcpGfKn9fl4DEbXzbp0/",
+  "name" : "common_local://TyKIqG9e9OA9aa58w1uzKF/_thumbnail",
+  "category" : "",
+  "parent" : "local://TyKIqG9e9OA9aa58w1uzKF/",
+  "pname" : "Course 101 Reader",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "type",
+    "expr" : {
+      "str" : "image/jpeg"
+    }
+  }, {
+    "name" : "attachmentLink",
+    "expr" : {
+      "str" : "db://common/b2546e2b-5691-4f04-872a-244fe519f5cd/"
+    }
+  }, {
+    "name" : "filename",
+    "expr" : {
+      "str" : "local://TyKIqG9e9OA9aa58w1uzKF/_thumbnail"
+    }
+  }, {
+    "name" : "maxAge",
+    "expr" : {
+      "num" : -1
+    }
+  }, {
+    "name" : "resource",
+    "expr" : {
+      "concept" : "/common/core/BLTv0pGnFoAPG4Q4YV8KS1/",
+      "conceptName" : "Attachment Resource",
+      "bindings" : {
+        "type" : "type",
+        "attachmentLink" : "attachmentLink",
+        "filename" : "filename",
+        "maxAge" : "maxAge"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "resource"
+  } ],
+  "isLambda" : false,
+  "digest" : "3Pcal07+gklY8Umb7h+tpg=="
+}

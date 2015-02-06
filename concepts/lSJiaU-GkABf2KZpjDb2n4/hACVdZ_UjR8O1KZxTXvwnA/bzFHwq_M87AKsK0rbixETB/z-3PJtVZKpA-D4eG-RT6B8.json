@@ -1,0 +1,35 @@
+{
+  "uri" : "local://z-3PJtVZKpA-D4eG-RT6B8/",
+  "name" : "Tim BL v1",
+  "category" : "",
+  "parent" : "local://bzFHwq_M87AKsK0rbixETB/",
+  "pname" : "Unit 3: Simple properties and concepts",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "firstName",
+    "expr" : {
+      "str" : "Tim",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "lastName",
+    "expr" : {
+      "str" : "Berners-Lee",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "fullName",
+    "expr" : {
+      "script" : "return firstName + ' ' + lastName;"
+    }
+  }, {
+    "name" : "hasBeard",
+    "expr" : {
+      "bool" : false
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false,
+  "digest" : "lhqd2oVgbjkli37dhmsL4g=="
+}

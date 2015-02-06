@@ -1,0 +1,41 @@
+{
+  "uri" : "local://61VaKe6zRtAdYqlaAgHs2E/",
+  "name" : "Course 100",
+  "category" : "course",
+  "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
+  "pname" : "Root Concept for univ",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_course_number",
+    "expr" : {
+      "str" : "100"
+    }
+  }, {
+    "name" : "_course_name",
+    "expr" : {
+      "str" : "Learning ConceptJS by example"
+    }
+  }, {
+    "name" : "_course_description",
+    "expr" : {
+      "str" : "This course takes you through a series of example applications in ConceptJS to introduce the ideas behind the platform. "
+    }
+  }, {
+    "name" : "course",
+    "expr" : {
+      "concept" : "local://GWUiaDKhGKAJsKG1W9fqV0/",
+      "conceptName" : "Course",
+      "bindings" : {
+        "number" : "_course_number",
+        "name" : "_course_name",
+        "description" : "_course_description"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "course"
+  } ],
+  "isLambda" : false,
+  "digest" : "syE6TkHqB565ulGCTLzkWA=="
+}

@@ -1,0 +1,30 @@
+{
+  "uri" : "local://_EibsMoJiK9WNKUKqYjgb9/",
+  "name" : "Sample Concept",
+  "category" : "",
+  "parent" : "local://xk3IxjDG7t9PrqNzLvWwaA/",
+  "pname" : "Unit 1: Hello World",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_page_html",
+    "expr" : {
+      "str" : "<h1 style=\"text-align: center; margin-top: 3em\">\n  Change this!\n</h1>",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "conceptName" : "HTML Page",
+      "bindings" : {
+        "html" : "_page_html"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false,
+  "digest" : "605x3RHWB+5zeYTcIrg8nw=="
+}

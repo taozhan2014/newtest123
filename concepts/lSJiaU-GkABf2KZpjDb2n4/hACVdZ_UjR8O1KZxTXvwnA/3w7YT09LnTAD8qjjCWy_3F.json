@@ -1,0 +1,41 @@
+{
+  "uri" : "local://3w7YT09LnTAD8qjjCWy_3F/",
+  "name" : "Unit 10: Sharing your work with others",
+  "category" : "unit",
+  "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
+  "pname" : "Course 101",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "Sharing your work with others"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<blockquote>\n<p>If you have knowledge, let others light their candles in it.\n\n<footer>Margaret Fuller, teacher, journalist and critic, 1810-1850 </footer>\n</blockquote>\n\n<h3>Social features in ConceptJS</h3>\n\n<p>At ConceptJS, we would like to promote sharing and reuse of concepts developed within the community. During the Beta period, which may extend till mid-late 2015, all contributions will be available to everyone in the community using the <a href=\"https://creativecommons.org/about/cc0\">CC0 license</a>. Even after the Beta release, we plan to host most publicly available concepts for free. \n\n<h4>Exhibits</h4>\n\n<p>Exhibits are the key to sharing concepts in ConceptJS. You can create an exhibit by clicking the \"Share\" menu-item available in the dropdown menu from the [<span class=\"fa fa-bars\"></span>] icon in the Viewer/Editor header. \n\n<br>\n\n<h3>Your public profile</h3>\n\n<p>Your public profile is typically the landing page once you log into the system. The concepts you develop will have a footer with a link to your public profile. If you are viewing concepts developed by someone else, you can use the link on the footer to access their profile. \n\n<h4>Showcase</h4>\n\n<p>The exhibits that you create appear in the Showcase Tab of your public profile. This is where others can view, favorite, tweet or download your exhibits. \n\n<h4>Favorites</h4>\n\n<p>The Favorites Tab in your public profile shows the exhibits that you loved. This is an easy way to bookmark an exhibit and return to it later. \n\n<h4>Twitter integration and <tt>#conceptjs</tt></h4>\n\n<p>If you provide a twitter handle with your account, your public profile will include a Follow button. This is an easy way for other ConceptJS users to keep track of your work. \n\n<p>You can use the <tt>#conceptjs</tt> hashtag to identify your tweets related to ConceptJS. \n\n<h4>Editor's Picks</h4>\n\n<p>Our \"editors\" continuously monitor and rate exhibits to add them to the \"Editor's Picks\" page. This page serves as a notice-board for the entire community. \n\n<hr>\n\n<h3>Applications as exhibits</h3>\n\n<p>When you download an exhibit, you simply copy the exhibit concept itself, or the \"template concept\" defined in that exhibit. The template concept is useful to specify a blank version of the concept that can be edited after the download. \n\n<h4>Install process</h4>\n\n<p>So how can a complex application and database be packaged into a single concept? The idea is to take the root concept under which other concepts are filed, and turn it into an exhibit. You can think of this concept as an application installer, or the small seed from which a tree can grow. \n\n<p>Let's take some examples: <ol>\n<li>An accounting application can engage a lot of concepts, but the person downloading it will start with the copy of an \"Empty Accounting Workbench\". From there, the person can add and configure accounts, ledgers, reports and so on. The <tt>$cjs.copy</tt> method is very useful to copy blank templates of accounts, ledgers, etc. to the local repository. \n<li>A bug-tracking application can involve many different concepts, but the \"seed concept\" can be a concept with link and buttons to create projects, people, lists and so on. \n</ol>\n\n<h4>Upgrade process</h4>\n\n<p>So what happens when you want to change the way a ledger looks, or add a download option in a bug report? Even though there are many copies of ledgers and bug reports, they all point to the same lambda-concept in the application's original repository. Now any change to those lambda concepts will apply to all instances of ledgers and bug reports. By properly organizing exhibits, blank concepts and lambda concepts, we can mimic the behavior of application install and upgrade processes in a hosted setting. \n\n<p>Please note that the Beta release does not include advanced SCCS features such as version management and fork/join, but this is on our roadmap. \n\n<hr>\n\n<h3>Feedback and help</h3>\n\n<p>We hope that this course was a useful and detailed introduction to ConceptJS. Please send us your feedback at info@lambdazen.com. \n\n<p>You can also chat with our developers at the IRC channel <tt>##ConceptJS</tt>. You can use <a href=\"http://webchat.freenode.net/?channels=%23%23conceptjs\" target=\"_blank\">FreeNode's webchat</a> to join the channel from your browser. \n\n<p>If you like ConceptJS, please spread the word. We are an early-stage startup with a big mission: \n<blockquote>To create an open and transparent digital world where anyone can access, understand and change the data/code that affects them. </blockquote>\n\n<p>We need your help to make this a reality!\n"
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 10
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "JZxPPgmZlrQsrRQtrnF+qg=="
+}

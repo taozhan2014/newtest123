@@ -1,0 +1,37 @@
+{
+  "uri" : "local://LCmYPBCjTiAj6aUOc9MJ99/",
+  "name" : "course.css",
+  "category" : "css",
+  "parent" : "local://jFRVnVkRVoBi-q28bextcC/",
+  "pname" : "Resources (Folder)",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "cssContent",
+    "expr" : {
+      "str" : "/* CSS for course*/\nbody {\n  font-size: 16px;\n}\n\nfigcaption {\n  font-size: smaller;\n  font-weight: bold;\n}\n\nblockquote {\n  font-family: serif;\n}\n\n.recap {\n  list-style-type: square;\n}\n\n.content {\n  border: solid 1px #cccccc;\n  border-radius: 5px;\n  padding: 10px 10px 20px 10px;\n}\n\n.btn {\n  text-shadow: none;\n}\n\nhr {\n    clear: both;\n}\n\n.sidenote {\n   float: right;\n   width: 25em;\n   max-width: 30%;\n   margin: 1em;\n   font-size: small;\n}\n\nh4 {\n    padding-top: 1em;\n}\n\n.sociallinks {\n    padding-top: 35px;\n}\n\n.sociallinks li{\n    display: inline;\n    list-style-type: none;\n    padding-right: 2px;\n}\n\n.cjs-twitter-button {\n    position: absolute !important;\n}\n\n#courseIndex {\n    padding-right: 20px;\n}\n\n#courseIndex .courseIndex {\n    padding-left: 10px;\n    padding-right: 10px;\n}\n\n#courseIndex .unitIndex {\n    padding-top: 5px;\n}\n\n#courseIndex a{\n    color: #333;\n    text-decoration: none;\n}\n\n#courseIndex a:hover{\n    color: orange;\n}\n\n#courseIndex a:visited{\n    color: orange;\n}\n\n#courseIndex .currentIndex{\n    color: orange;\n}",
+      "strEditMode" : "css"
+    }
+  }, {
+    "name" : "_cssResource_fileName",
+    "expr" : {
+      "str" : "course.css",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "cssResource",
+    "expr" : {
+      "concept" : "/common/core/D_CaDRd425Aqj4mtY9Oh1B/",
+      "conceptName" : "CSS Resource",
+      "bindings" : {
+        "css" : "cssContent",
+        "fileName" : "_cssResource_fileName"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "cssResource"
+  } ],
+  "isLambda" : false,
+  "digest" : "kI5HBJ33TvP0dw3AfK/+Hg=="
+}

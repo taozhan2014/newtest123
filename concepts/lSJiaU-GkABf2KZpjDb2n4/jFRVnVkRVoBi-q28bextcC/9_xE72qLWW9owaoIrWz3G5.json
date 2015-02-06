@@ -1,0 +1,37 @@
+{
+  "uri" : "local://9_xE72qLWW9owaoIrWz3G5/",
+  "name" : "course.js",
+  "category" : "js",
+  "parent" : "local://jFRVnVkRVoBi-q28bextcC/",
+  "pname" : "Resources (Folder)",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "jsContent",
+    "expr" : {
+      "str" : "function CourseReaderModel(cvm, courseModel) {\n    var self = this;\n    \n    var unitUris = cvm.course().prop('course').execute(\"getSortedUnitUris\", []);\n    \n    this.uri = cvm.uri();\n    this.courseNumber = ko.observable(cvm.course().prop('course').prop('number').val());\n    this.courseName = ko.observable(cvm.course().prop('course').prop('name').val());\n    this.curCVMUnitNumber = cvm.curUnitNumber;\n    this.curUnitNumber = ko.observable(this.curCVMUnitNumber());\n    this.returnUri = cvm.returnUri;\n\n    this.unit = ko.observable(null);\n    this.unitNumber = ko.computed(function() {\n        return this.unit() ? ('' + (this.curUnitNumber() + 1)) : '';\n    }, this);\n    this.unitName = ko.computed(function() {\n        return this.unit() ? this.unit().prop('name').val() : 'Loading...';\n    }, this);\n    this.unitContent = ko.computed(function() {\n        return this.unit() ? this.unit().prop('content').val() : 'Loading...';\n    }, this);\n    this.completePercent = ko.computed(function() {\n        return Math.round(100 * (this.curUnitNumber() + 1) / unitUris.length);\n    }, this);\n    this.completeWidth = ko.computed(function() {\n        var percent = this.completePercent();\n        return \"width: \" + percent + \"%\";\n    }, this);\n    this.nextEnabled = ko.computed(function() {\n        return (this.curUnitNumber() + 1) < unitUris.length;\n    }, this);\n    this.goBackEnabled = (this.returnUri() ? true : false);\n    this.doneEnabled = ko.computed(function() {\n        return this.goBackEnabled && ((this.curUnitNumber() + 1) == unitUris.length);\n    }, this);\n    this.prevEnabled = ko.computed(function() {\n        return this.curUnitNumber() > 0;\n    }, this);\n    this.ejectEnabled = ko.computed(function() {\n        return this.curUnitNumber() == 0;\n    }, this);\n    this.nextClick = function() {\n        if (self.nextEnabled()) {\n            if (ko.isWritableObservable(self.curCVMUnitNumber)){\n                self.curCVMUnitNumber(self.curUnitNumber() + 1);\n            }\n            self.curUnitNumber(self.curUnitNumber() + 1);\n            if (courseModel){\n                courseModel.goNext();\n            }\n            window.scrollTo(0, 0);\n        }\n    };\n    this.gotoClick = function(unitNumber) {\n        if (ko.isWritableObservable(self.curCVMUnitNumber)){\n            self.curCVMUnitNumber(unitNumber);\n        }\n        self.curUnitNumber(unitNumber);\n        window.scrollTo(0, 0);\n    };\n    this.startClick = function() {\n        if (ko.isWritableObservable(self.curCVMUnitNumber)){\n            self.curCVMUnitNumber(0);\n        }\n        self.curUnitNumber(0);\n        if (courseModel){\n            courseModel.startover();\n        }\n        window.scrollTo(0, 0);\n    };\n    this.goBackClick = function() {\n        if (self.returnUri()) {\n            $cjs.redirect(self.returnUri());\n        }\n    }\n    this.doneClick = function() {\n        if (self.doneEnabled()) {\n            self.goBackClick();\n        }\n    };\n    this.prevClick = function() {\n        if (self.prevEnabled()) {\n            if (ko.isWritableObservable(self.curCVMUnitNumber)){\n                self.curCVMUnitNumber(self.curUnitNumber() - 1);\n            }\n            self.curUnitNumber(self.curUnitNumber() - 1);\n            if (courseModel){\n                courseModel.goPrevious();\n            }\n            window.scrollTo(0, 0);\n        }\n    };\n\n    this.reloadUnit = function() {\n        var unitNum = self.curUnitNumber();\n        if ((unitNum < 0) || (unitNum >= unitUris.length)) {\n            // Go back to 0\n            if (ko.isWritableObservable(self.curCVMUnitNumber)){\n                self.curCVMUnitNumber(0);\n            }\n            self.curUnitNumber(0);\n        } else {\n            // Reload unit\n            self.unit($cjs(unitUris[unitNum]));\n        }\n    }\n\n    this.curUnitNumber.subscribe(function() {\n        $cjs.session.save();\n        self.reloadUnit();\n    });\n\n    self.reloadUnit();\n};\n\n",
+      "strEditMode" : "js"
+    }
+  }, {
+    "name" : "_javascriptResource_fileName",
+    "expr" : {
+      "str" : "course.js",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "javascriptResource",
+    "expr" : {
+      "concept" : "/common/core/nK_9eZMUDp8T6qqr7t5k67/",
+      "conceptName" : "Javascript Resource",
+      "bindings" : {
+        "js" : "jsContent",
+        "fileName" : "_javascriptResource_fileName"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "javascriptResource"
+  } ],
+  "isLambda" : false,
+  "digest" : "EuML+edizwft/GAMmnayUg=="
+}

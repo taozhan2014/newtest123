@@ -1,0 +1,47 @@
+{
+  "uri" : "local://Y8pgVHNQeyBXp4dm4q_MtB/",
+  "name" : "HelloWorld.png",
+  "category" : "",
+  "parent" : "local://xk3IxjDG7t9PrqNzLvWwaA/",
+  "pname" : "Unit 1: Hello World",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "type",
+    "expr" : {
+      "str" : "image/png"
+    }
+  }, {
+    "name" : "attachmentLink",
+    "expr" : {
+      "str" : "db://common/2fe614d7-11ec-450f-8425-c3e88d589335/"
+    }
+  }, {
+    "name" : "filename",
+    "expr" : {
+      "str" : "HelloWorld.png"
+    }
+  }, {
+    "name" : "maxAge",
+    "expr" : {
+      "num" : 0
+    }
+  }, {
+    "name" : "resource",
+    "expr" : {
+      "concept" : "/common/core/BLTv0pGnFoAPG4Q4YV8KS1/",
+      "conceptName" : "Attachment Resource",
+      "bindings" : {
+        "type" : "type",
+        "attachmentLink" : "attachmentLink",
+        "filename" : "filename",
+        "maxAge" : "maxAge"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "resource"
+  } ],
+  "isLambda" : false,
+  "digest" : "B/TpNz4cuAU6Nat0S/MjTA=="
+}

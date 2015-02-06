@@ -1,0 +1,47 @@
+{
+  "uri" : "local://MKPa29um9m9rIaX71JoQR6/",
+  "name" : "common_local://uzXc8Y_YQ9BHZ4-tcdSOsD/_thumbnail",
+  "category" : "",
+  "parent" : "local://uzXc8Y_YQ9BHZ4-tcdSOsD/",
+  "pname" : "James Gosling v3",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "type",
+    "expr" : {
+      "str" : "image/jpeg"
+    }
+  }, {
+    "name" : "attachmentLink",
+    "expr" : {
+      "str" : "db://common/91bb5449-5a53-41c1-a305-ebea3c217824/"
+    }
+  }, {
+    "name" : "filename",
+    "expr" : {
+      "str" : "local://uzXc8Y_YQ9BHZ4-tcdSOsD/_thumbnail"
+    }
+  }, {
+    "name" : "maxAge",
+    "expr" : {
+      "num" : -1
+    }
+  }, {
+    "name" : "resource",
+    "expr" : {
+      "concept" : "/common/core/BLTv0pGnFoAPG4Q4YV8KS1/",
+      "conceptName" : "Attachment Resource",
+      "bindings" : {
+        "type" : "type",
+        "attachmentLink" : "attachmentLink",
+        "filename" : "filename",
+        "maxAge" : "maxAge"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "resource"
+  } ],
+  "isLambda" : false,
+  "digest" : "1BoSpx9I6MmcyFh06ifUUA=="
+}

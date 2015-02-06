@@ -1,0 +1,35 @@
+{
+  "uri" : "local://6DhcqTtJroADbqmpk9U3x4/",
+  "name" : "hello.css",
+  "category" : "css",
+  "parent" : "local://IaaePa1o6cAmh4FITyp_Z0/",
+  "pname" : "Unit 9: Core concepts for searching, downloading, naming and RDF export",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_cssResource_css",
+    "expr" : {
+      "str" : ".notfunny {\r\n    font-family: \"Comic Sans MS\", cursive, sans-serif;\r\n    text-align: center;\r\n}"
+    }
+  }, {
+    "name" : "_cssResource_fileName",
+    "expr" : {
+      "str" : "hello.css"
+    }
+  }, {
+    "name" : "cssResource",
+    "expr" : {
+      "concept" : "/common/core/D_CaDRd425Aqj4mtY9Oh1B/",
+      "conceptName" : "CSS Resource",
+      "bindings" : {
+        "css" : "_cssResource_css",
+        "fileName" : "_cssResource_fileName"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "cssResource"
+  } ],
+  "isLambda" : false,
+  "digest" : "CLchUkpjgWzOmvmZlzS/ig=="
+}

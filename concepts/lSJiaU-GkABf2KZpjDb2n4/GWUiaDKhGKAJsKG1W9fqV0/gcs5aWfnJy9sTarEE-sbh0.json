@@ -1,0 +1,44 @@
+{
+  "uri" : "local://gcs5aWfnJy9sTarEE-sbh0/",
+  "name" : "Example Course",
+  "category" : ".example",
+  "parent" : "local://GWUiaDKhGKAJsKG1W9fqV0/",
+  "pname" : "Course",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_course_number",
+    "expr" : {
+      "str" : "201",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_course_name",
+    "expr" : {
+      "str" : "Advanced ConceptJS",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_course_description",
+    "expr" : {
+      "str" : "(Just an example) This course covers some advanced features of ConceptJS.",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "course",
+    "expr" : {
+      "concept" : "local://GWUiaDKhGKAJsKG1W9fqV0/",
+      "conceptName" : "Course",
+      "bindings" : {
+        "number" : "_course_number",
+        "name" : "_course_name",
+        "description" : "_course_description"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "course"
+  } ],
+  "isLambda" : false,
+  "digest" : "Ho0+NSFqeySQh8OcG0Irww=="
+}

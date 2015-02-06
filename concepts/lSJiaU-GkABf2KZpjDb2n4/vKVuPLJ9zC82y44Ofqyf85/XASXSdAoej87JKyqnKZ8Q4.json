@@ -1,0 +1,41 @@
+{
+  "uri" : "local://XASXSdAoej87JKyqnKZ8Q4/",
+  "name" : "Unit 1: ",
+  "category" : "unit",
+  "parent" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+  "pname" : "Course Unit",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : ""
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : ""
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 1
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "qsmrkhpwfec04kk6DDfiLw=="
+}

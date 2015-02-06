@@ -1,0 +1,30 @@
+{
+  "uri" : "local://Q29RlVUD_j92J4DpPjKST4/",
+  "name" : "CJS link and redirect tests",
+  "category" : "",
+  "parent" : "local://E40ZSmDZ3q89eafTdvRjvC/",
+  "pname" : "Course Reader",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_page_html",
+    "expr" : {
+      "str" : "<h3>Link and redirect tests</h3>\n\n<h4>Simple links</h4>\n\n<ol>\n<li><a href=\"/viewlocal://TyKIqG9e9OA9aa58w1uzKF/\">for view</a>, and \n<li><a href=\"/idelocal://TyKIqG9e9OA9aa58w1uzKF/\">for IDE</a>.\n</ol>\n\n<h4>$cjs.redirect calls</h4>\n<ol>\n<li><a href=\"javascript: void(0)\" id=\"default\">to default</a>, \n<li><a href=\"javascript: void(0)\" id=\"blank\">to blank</a>, \n<li><a href=\"javascript: void(0)\" id=\"self\">to self</a>, \n<li><a href=\"javascript: void(0)\" id=\"parent\">to parent</a>, \n<li><a href=\"javascript: void(0)\" id=\"top\">to top</a>, \n<li><a href=\"javascript: void(0)\" id=\"something\">to something</a>\n</ol>\n\n<script>\n$(function() {\n  var uri = 'local://TyKIqG9e9OA9aa58w1uzKF/';\n  $(\"#default\").click(function() { $cjs.redirect(uri); });\n  $(\"#blank\").click(function() { $cjs.redirect(uri, '_blank'); });\n  $(\"#top\").click(function() { $cjs.redirect(uri, '_top'); });\n  $(\"#parent\").click(function() { $cjs.redirect(uri, '_parent'); });\n  $(\"#self\").click(function() { $cjs.redirect(uri, '_self'); });\n  $(\"#something\").click(function() { $cjs.redirect(uri, 'something'); });\n});\n</script>",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "conceptName" : "HTML Page",
+      "bindings" : {
+        "html" : "_page_html"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false,
+  "digest" : "kVIRJrMhqN8+ELIqI03edQ=="
+}

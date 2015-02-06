@@ -1,0 +1,41 @@
+{
+  "uri" : "local://c35hwDiF8nAofKZQbwJUqA/",
+  "name" : "Unit 6: Using KnockoutJS to build forms",
+  "category" : "unit",
+  "parent" : "local://61VaKe6zRtAdYqlaAgHs2E/",
+  "pname" : "Course 100",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "Using KnockoutJS to build forms"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<h3>KnockoutJS integration</h3>\n\n<div class=\"sidenote well\">\n<p><em>Advantages of client-side rendering</em>. Client-side rendering frameworks, such as KnockoutJS and AngularJS, are becoming popular. The advantage of using KnockoutJS with ConceptJS is that you can bind DOM elements to a concept's properties <em>once</em>, and this will take care of loading and saving the property. Using server-side rendering (shown in the previous unit), you will have to load from the server-side and save from the client-side. In other words, you must handle each property <em>twice</em>. \n\n<p><em>Disadvantages of client-side rendering</em>. Server-side rendering makes it easier for search engines to index your content, and avoids the initial flicker that you see when the page is being loaded. Since ConceptJS makes it possible to edit both client and server-side scripts through the browser, you could decide that the development speed gained by KnockoutJS isn't worth the downsides. \n</div>\n\n<p>In the previous unit, we created an updateable form using jQuery. In this unit, we will convert that page to use KnockoutJS. \n\n<p><a href=\"http://knockoutjs.com\" target=\"_blank\">Knockout</a> is a &ldquo;JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model. &rdquo; You can use KnockoutJS to declare bindings from DOM elements to Javascript model objects. \n\n<p>The ConceptJS API supports a method <tt>$cjs.ko(\"[URI]\")</tt> that returns an object with all of the concept's properties available as <a href=\"http://knockoutjs.com/documentation/observables.html\">Knockout observables</a>. We will use this method to simplify the jQuery-based form in the previous unit to a Knockout-based form. \n\n<h4>Porting the form from jQuery to KnockoutJS</h4>\n\n<p>You can follow these steps to port the form from the previous unit to use KnockoutJS: <ol>\n<li>Copy the \"Example jQuery Form\" to the ConceptJS clipboard using the IDE Finder. \n<li>Paste the concept from the clipboard in the same level, and open it in the Editor. \n<li>Rename the concept from \"copy of Example JQuery Form\"  to \"Example Knockout Form\". \n<li>Select the <tt>htmlTemplate</tt> property of the concept, and modify the &lt;input&gt; tag for the first name as follows: \n<pre>\nCHANGE\n   &lt;input type=\"text\" class=\"form-control\" id=\"inputFN\" placeholder=\"Enter the first name\" value=\"{{firstName}}\"&gt;\nTO\n   &lt;input type=\"text\" class=\"form-control\" id=\"inputFN\" placeholder=\"Enter the first name\" data-bind=\"textInput: firstName\">&gt;\n</pre>\n<li>Change the input tag for the last name similarly, as shown below: \n<pre>\nCHANGE\n   &lt;input ... value=\"{{lastName}}\"&gt;\nTO\n   &lt;input ... data-bind=\"textInput: lastName\">&gt;\n</pre>\n<li>Modify the script at the end of the <tt>htmlTemplate</tt> to the following snippet: \n<pre>\n&lt;script&gt;\n  var viewModel = $cjs.ko(\"{{{uri}}}\");\n  ko.applyBindings(viewModel);\n\n  $(\"#saveBtn\").click(function() {\n    $cjs.session.save();\n  });\n&lt;/script&gt;\n</pre>\n<p>This creates a Knockout model for the first and last name properties and binds the two <tt>data-bind</tt> attributes to their values. \n<li>You don't need to pass the first and last names into the Mustache template anymore. These values are rendered by Knockout after the page loads, based on the values in the view-model object. So you can select the <tt>page</tt> property and simplify the <tt>propertyMap</tt> binding as shown below: \n<pre>\nCHANGE\n  return {firstName: firstName, lastName: lastName, uri: home.uri()};\nTO\n  return {uri: home.uri()};\n</pre>\n<li>Add a &lt;meta&gt; tag inside the &lt;head&gt; of the htmlTemplate as shown below:  \n<pre>\n    &lt;meta content=\"script\" name=\"cjsSaveMode\"&gt;\n</pre>\n<p>This informs the ConceptJS platform that Save and Cancel will be handled using the scripts in the HTML. \n<li>You can refresh the concept in the viewer. The form will automatically update itself with the first and last names. The changes you make can be saved back into the concept. \n</ol>\n\n<p>You should end up with something like <a href=\"/ide/conceptjs/default/tdw_y7g8y58S04POIWuRJ7/\" target=\"_blank\">this concept</a>. \n\n<p>The following video demonstrates the steps outlined above: \n\n<hr>\n<iframe src=\"//fast.wistia.net/embed/iframe/51z48w5km8?videoFoam=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width=\"854\" height=\"463\"></iframe><script src=\"//fast.wistia.net/assets/external/iframe-api-v1.js\"></script>\n<hr>\n\n<h4>How it works</h4>\n\n<p>The Knockout implementation is different from the jQuery implementation in that it loads the values of the first and last names from the browser in a separate request back to the server. The HTML page delivered by the concept includes the statement <tt>cjs.ko(\"...uri...\")</tt> which loads the Knockout observables for the first and last names. When the bindings are applied using the <tt>ko.applyBindings</tt>, the Knockout library updates the input fields based on the <tt>data-bind</tt> attributes in the HTML page. \n\n<p>The advantage of using Knockout is that changes made to the field by the user are automatically saved back into the Knockout observable. This is the reason why the moment you change the field, the page brings up Save and Cancel buttons on the header. The way to disable this is to add the &lt;meta&gt; tag that informs ConceptJS that the HTML/Javascript takes care of saving the change by itself. \n\n<p>The <tt>cjsSaveMode</tt> meta tag supports two other modes: manual and auto. The manual mode is the default which means that any change made to properties will trigger a Save/Cancel button to be shown. The auto mode saves the changes made to properties every few seconds and when the user exits the page. \n\n<h3>Recap</h3>\n\n<ul class=\"recap\">\n<li>ConceptJS is integrated with the KnockoutJS MVVM framework. \n<li>The <tt>$cjs.ko()</tt> method can be used to turn concepts into a map of Knockout observables. These observables can be used to bind DOM elements to properties in concepts. \n<li>The <tt>cjsSaveMode</tt> meta tag informs the ConceptJS platform if the changes made to concepts will be saved manually (<tt>manual</tt>, default), automatically (<tt>auto</tt>) or through custom UI widgets and scripts (<tt>script</tt>). \n</ul>\n\n<p>In the next unit, we will delve into lambdas and bindings. "
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 6
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "ntv1MxwYnC0ulMiLZQGESg=="
+}

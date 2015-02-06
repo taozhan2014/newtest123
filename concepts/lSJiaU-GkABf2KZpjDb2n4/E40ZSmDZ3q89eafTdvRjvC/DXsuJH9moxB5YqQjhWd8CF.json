@@ -1,0 +1,50 @@
+{
+  "uri" : "local://DXsuJH9moxB5YqQjhWd8CF/",
+  "name" : "Example Course Reader",
+  "category" : ".example",
+  "parent" : "local://E40ZSmDZ3q89eafTdvRjvC/",
+  "pname" : "Course Reader",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_reader_course",
+    "expr" : {
+      "concept" : "local://gcs5aWfnJy9sTarEE-sbh0/",
+      "conceptName" : "Example Course"
+    }
+  }, {
+    "name" : "_reader_readerType",
+    "expr" : {
+      "str" : "programmer",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_reader_curUnitNumber",
+    "expr" : {
+      "num" : 0
+    }
+  }, {
+    "name" : "_reader_returnUri",
+    "expr" : {
+      "str" : "/common/core/NMmuSsOubDALuay8XUtCtD/",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "reader",
+    "expr" : {
+      "concept" : "local://E40ZSmDZ3q89eafTdvRjvC/",
+      "conceptName" : "Course Reader",
+      "bindings" : {
+        "course" : "_reader_course",
+        "readerType" : "_reader_readerType",
+        "curUnitNumber" : "_reader_curUnitNumber",
+        "returnUri" : "_reader_returnUri"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "reader"
+  } ],
+  "isLambda" : false,
+  "digest" : "WryimYI4H/MYR4GuzVrDyg=="
+}

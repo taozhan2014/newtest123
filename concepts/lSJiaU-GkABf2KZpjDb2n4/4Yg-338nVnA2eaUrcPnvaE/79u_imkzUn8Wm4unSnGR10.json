@@ -1,0 +1,29 @@
+{
+  "uri" : "local://79u_imkzUn8Wm4unSnGR10/",
+  "name" : "Course",
+  "category" : ".courses",
+  "parent" : "local://4Yg-338nVnA2eaUrcPnvaE/",
+  "pname" : "Templates",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_courseIndex_lastVisitCourse",
+    "expr" : {
+      "str" : "local://nmmRVvYGfr8s94_dwOtfWC/"
+    }
+  }, {
+    "name" : "courseIndex",
+    "expr" : {
+      "concept" : "local://Im-hwEGR8wB4_4Q6c20se6/",
+      "conceptName" : "Course Index",
+      "bindings" : {
+        "lastVisitCourse" : "_courseIndex_lastVisitCourse"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "courseIndex"
+  } ],
+  "isLambda" : false,
+  "digest" : "VAj6bHWzbHz397ycDwED7A=="
+}

@@ -1,0 +1,26 @@
+{
+  "uri" : "local://lYj6zM_lxu8B143dhrrd08/",
+  "name" : "Example lambda concept showing addition",
+  "category" : "eg",
+  "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
+  "pname" : "Course 101",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "a",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
+    "typeName" : "number"
+  }, {
+    "name" : "b",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
+    "typeName" : "number"
+  } ],
+  "vars" : [ {
+    "name" : "result",
+    "expr" : {
+      "script" : "return a + b;"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : true,
+  "digest" : "aOC9PqnJ7Xx83s31hBAJig=="
+}

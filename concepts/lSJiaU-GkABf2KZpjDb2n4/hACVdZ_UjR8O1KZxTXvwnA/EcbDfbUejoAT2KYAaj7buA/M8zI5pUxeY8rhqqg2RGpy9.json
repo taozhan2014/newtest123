@@ -1,0 +1,38 @@
+{
+  "uri" : "local://M8zI5pUxeY8rhqqg2RGpy9/",
+  "name" : "Simple Null Test",
+  "category" : "",
+  "parent" : "local://EcbDfbUejoAT2KYAaj7buA/",
+  "pname" : "Unit 1: Introduction",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "foo",
+    "expr" : {
+      "script" : "return null;"
+    }
+  }, {
+    "name" : "bar",
+    "expr" : {
+      "concept" : "local://MKakzVFFQTBKFaFJimoap6/",
+      "conceptName" : "Lambda Null Test",
+      "bindings" : { }
+    }
+  }, {
+    "name" : "baz",
+    "expr" : {
+      "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/",
+      "conceptName" : "Null"
+    }
+  }, {
+    "name" : "voo",
+    "expr" : {
+      "concept" : "local://MKakzVFFQTBKFaFJimoap6/",
+      "conceptName" : "Lambda Null Test",
+      "bindings" : { }
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false,
+  "digest" : "bQoOwLmdnrqB7Zb02qPm7w=="
+}

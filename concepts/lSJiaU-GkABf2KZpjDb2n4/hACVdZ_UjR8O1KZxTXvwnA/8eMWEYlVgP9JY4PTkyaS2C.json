@@ -1,0 +1,39 @@
+{
+  "uri" : "local://8eMWEYlVgP9JY4PTkyaS2C/",
+  "name" : "Example showing data variable",
+  "category" : "eg",
+  "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
+  "pname" : "Course 101",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "foo",
+    "expr" : {
+      "script" : "var message = 'variables are invisible to bar';\ndata.message = 'data is visible in bar';\n\nreturn 0"
+    }
+  }, {
+    "name" : "bar",
+    "expr" : {
+      "script" : "// Accessing local and data var\n\nvar result = ''\nif (typeof message == 'undefined') {\n    result += '<li>Local variable is not visible. (OK)';\n} else {\n    result += '<li>Local variable is visible -- report a bug!';\n}\n\nif (data.message) {\n    result += '<li>Data is accessible! Found message: \"' + data.message + '\" (OK)';\n} else {\n    result += '<li>Data is not visible -- report a bug!'\n}\n\nreturn result;"
+    }
+  }, {
+    "name" : "_page_html",
+    "expr" : {
+      "script" : "return \"<h3>Result</h3><ul>\" + bar + \"</ul>\""
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "conceptName" : "HTML Page",
+      "bindings" : {
+        "html" : "_page_html"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false,
+  "digest" : "HHhzmsI0vbDp+GJc4EWlZQ=="
+}

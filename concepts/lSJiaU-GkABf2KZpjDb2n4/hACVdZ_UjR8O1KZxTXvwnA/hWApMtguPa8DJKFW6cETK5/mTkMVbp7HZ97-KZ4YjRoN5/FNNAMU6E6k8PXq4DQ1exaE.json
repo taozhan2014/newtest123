@@ -1,0 +1,47 @@
+{
+  "uri" : "local://FNNAMU6E6k8PXq4DQ1exaE/",
+  "name" : "common_local://mTkMVbp7HZ97-KZ4YjRoN5/_thumbnail",
+  "category" : "",
+  "parent" : "local://mTkMVbp7HZ97-KZ4YjRoN5/",
+  "pname" : "Tim BL v3",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "type",
+    "expr" : {
+      "str" : "image/jpeg"
+    }
+  }, {
+    "name" : "attachmentLink",
+    "expr" : {
+      "str" : "db://common/19ebbfd6-c989-462b-b4b1-ae529bc781e3/"
+    }
+  }, {
+    "name" : "filename",
+    "expr" : {
+      "str" : "local://mTkMVbp7HZ97-KZ4YjRoN5/_thumbnail"
+    }
+  }, {
+    "name" : "maxAge",
+    "expr" : {
+      "num" : -1
+    }
+  }, {
+    "name" : "resource",
+    "expr" : {
+      "concept" : "/common/core/BLTv0pGnFoAPG4Q4YV8KS1/",
+      "conceptName" : "Attachment Resource",
+      "bindings" : {
+        "type" : "type",
+        "attachmentLink" : "attachmentLink",
+        "filename" : "filename",
+        "maxAge" : "maxAge"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "resource"
+  } ],
+  "isLambda" : false,
+  "digest" : "XzdRRVf1CmvIJkLAr8+O+g=="
+}

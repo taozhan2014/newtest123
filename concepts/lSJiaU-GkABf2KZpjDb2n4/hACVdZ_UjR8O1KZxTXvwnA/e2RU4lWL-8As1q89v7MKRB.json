@@ -1,0 +1,41 @@
+{
+  "uri" : "local://e2RU4lWL-8As1q89v7MKRB/",
+  "name" : "Unit 4: Lambda properties and concepts",
+  "category" : "unit",
+  "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
+  "pname" : "Course 101",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "Lambda properties and concepts"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<blockquote>\n<p>Every piece of knowledge must have a single, unambiguous, authoritative representation within a system. \n\n<footer>The DRY (Don't repeat yourself) principle, Pragmatic Programmer, Andrew Hunt and David Thomas, 1999.</footer>\n</blockquote>\n\n<h3>Introducing lambdas</h3>\n\n<div class=\"well sidenote\"><p>Lambda refers to the Greek letter lambda, written as &lambda;. The symbol is derived from <a href=\"http://en.wikipedia.org/wiki/Lambda_calculus\" target=\"_blank\">lambda calculus</a> &mdash; a mathematical system developed by Alonzo Church in 1936. The basic idea behind lambda calculus is <b>placeholder substitution</b>. \n\n<p>For example, I can write a doubling function in lambda calculus as follows: \n\n<p class=\"text-center\"><b>f = &lambda;x. x + x.</b></p>\n\n<p>In English, this reads: f is set to a function, that given some x, will return x plus x. \n\n<p>Now we can apply f to 2, written as f(2), to get 4. f(3) = 6, f(4) = 8, and so on. \n</div>\n\n<p>So far, we have discussed concepts, their hierarchy (as seen in the Finder) and simple properties (as seen in the Editor). Now comes the fun part &mdash; lambda properties and lambda concepts. Lambdas let you add structure and meaning to your concepts. They also help avoid duplication of scripts and data. \n\n<p>The concept model uses a <b>lambda calculus of concepts</b> to create abstractions of specific concepts, which we call <i>lambda concepts</i>. For example, I could look at the concepts <a href=\"/idelocal://z-3PJtVZKpA-D4eG-RT6B8/\">Tim BL v1</a> and <a href=\"/idelocal://Rpxhfp3eI18C1qiIU2f8U7/\">James Gosling v1</a>, and realize that they share many properties that are common across programmers. If you notice, the \"fullName\" property in both concepts have the same script expression. Wouldn't it be nice to have the script in one place? This is what you can do with lambda concepts. \n\n<p>You can move the fullName script to a more abstract concept that both Tim and James can use. Let's call this abstract concept, or <i>lambda concept</i>, \"Programmer\". The new \"Programmer\" concept will have placeholder properties, called <i>lambda properties</i> with the firstName, lastName, bio and hasBeard. Now we can move the fullName property to the Programmer lambda-concept. The process of taking common aspects from simple concepts to create lambda concepts is called <b>abstraction</b>.\n\n<p>The following video shows how you can create a lambda concept Programmer using the Editor. \n\n<br>\n\n<p><figure style=\"text-align: center\">\n\n<iframe src=\"//fast.wistia.net/embed/iframe/oewtnnwj6g\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width=\"854\" height=\"424\"></iframe>\n\n</figure>\n\n<br>\n\n<hr>\n\n<h3>Binding lambda concepts</h3>\n\n<p>Whenever a lambda concept is referenced from another concept, all its placeholder lambda properties must be bound. This process is called <b>binding</b> and the end-result is a <b>bound concept</b>.\n\n<p>In the previous video, we created a lambda concept called \"Programmer\". The next video shows how we can create a new version of \"Tim Berners-Lee\", called <a href=\"/idelocal://TCIOkWWvplA9J45hEw2BuF/\" target=\"_blank\">Tim BL v2</a>, that <i>binds</i> this lambda concept. \n\n<br>\n\n<p><figure style=\"text-align: center\">\n\n<iframe src=\"//fast.wistia.net/embed/iframe/892efqba8y\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width=\"854\" height=\"424\"></iframe>\n\n</figure>\n\n<br>\n\n<p>Bound concepts are typically stored as a simple property in the concept that creates the binding. In the above video, both the Tim BL v2 concept had a property called \"programmer\" where the bound concept was stored. You can also look <a href=\"/idelocal://J0zd3hTpri8-gq_Wh7Kx_C/\" target=\"_blank\">James Gosling v2</a> which has a similar structure. \n\n<hr>\n\n<h3>Evaluation algorithm</h3>\n\n<p>The central idea behind ConceptJS is that every concept can be evaluated independently. The runtime model for concepts is different from traditional software architectures. There are no main methods, threads, events, call stacks, objects, variables, etc. Instead, a concept is fed into an <b>evaluation algorithm</b> that executes the various scripts defined in the concept. \n\n<p>The debugger in the IDE is a useful tool to understand the evaluation of a concept. The previous video showed how you can use the debugger to drill down and investigate both Tim BL v2 and the bound concept that it created. The debugger will also show errors and console outputs (look for the <span class=\"fa fa-file-text-o\"></span> icon in the first debugger panel). \n\n<p>Only simple concepts can be evaluated. Lambda concepts can not be evaluated because the system doesn't know the values of the lambda properties. The evaluation algorithm works as follows: \n<ol>\n<li><b>Mandatory lambdas</b>: If this is a bound concept, make sure that all mandatory lambda properties are set. \n<li><b>Optional lambdas</b>: If this is a bound concept, assign the optional lambda properties to their defaults unless they are already specified. \n<li><b>Simple properties</b>: Go through each simple property in order and evaluate the expression corresponding to it. If the expression is a binding, evaluate the bound concept recursively using the same algorithm. \n<li><b>Is-a relationships</b>: Establish is-a relationships that can later be queried using the \"as\", \"isa\" and \"all\" operations. The next two units discuss is-a relationships and the listed operations. \n</ol>\n\n<p>The recursive evaluation of bound concepts is a key feature of the concept model. We will see more of this in later examples. \n\n<hr>\n\n<h3>Recap</h3>\n\n<ul>\n<li>Any concept with one or more lambda properties is called a lambda concept. \n<li>Lambda properties are placeholders that are substituted during the process of binding. \n<li>Bound concepts are the result of a binding, and can be stored in simple properties. \n<li>You can think of \"Programmer\" as a lambda concept and specific people such as \"Tim Berners-Lee\" and \"James Gosling\" as bound concepts. \n<li>The evaluation algorithm evaluates simple concepts by calculating the value of each property expression. If the property expression is a concept binding, then it recursively evaluates the bound concept. \n<li>The debugger can be used to investigate properties inside simple and bound concepts, and thereby understand how the evaluation algorithm works for specific concepts. \n</ul>\n"
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 4
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "qjl1fLAL4VMlf2+Qhy00Kg=="
+}

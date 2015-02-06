@@ -1,0 +1,41 @@
+{
+  "uri" : "local://C_yWzwJG8ZBuV4glOblb69/",
+  "name" : "Unit 2: Concepts",
+  "category" : "unit",
+  "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
+  "pname" : "Course 101",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "Concepts"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<blockquote>\n<p>The more I think about language, the more it amazes me that people ever understand each other at all.\n\n<footer>Kurt G&ouml;del, mathematician, 1906-78</footer>\n</blockquote>\n\n<h3>What is a concept?</h3>\n\n<p><b>A concept is a shared understanding of something. </b>Examples of concepts include yellow, rain, umbrella and Texas. The individual understanding of something is called conception. Conceptions converge into concepts as a result of a shared human experience that enables a shared human understanding. \n\n<p>Concepts are loosely tied to words and phrases. Multiple words/phrases can have refer to the same concept, like Red Sox and Boston Red Sox. The same word, like Mercury, can refer to multiple concepts, like Mercury (element), Mercury (planet) and Mercury (Roman god). \n\n<p>In ConceptJS, we try to model concepts in the minds of the <i>target end-users</i> as concepts in the platform. For instance, accountants might think in terms of accounts, invoices, ledgers, 1099s and so on. An accounting application in ConceptJS will model these concepts in the platform to make it easy for the accountant to understand how the system works. The page you are reading now, for example, is a \"Course Reader\" concept that shows the \"Course Unit\" concepts defined under a \"Course 101\" concept. The next section describes the concept model which is fundamental to ConceptJS. \n\n<hr>\n\n<h3>The concept model</h3>\n\n<p>A concept in ConceptJS follows a strict concept model. In this model, each concept has the following key components: \n\n<p><table class=\"table table-hover\">\n  <tr><th>URI</th> <td>The automatically-generated URI of the concept of the form /[user]/[repo]/[uuid]. <p class=\"small\">The URI of this concept is <tt id=\"concUri\">not available</tt>, and you can see this in your browser's URL. The UUID is a <a href=\"http://en.wikipedia.org/wiki/Universally_unique_identifier\">universally unique identifier</a> that can't be the same in two different concepts. </td>\n\n  <tr><th>Name</th> <td>The name of the concept. <p class=\"small\">For instance, the name of this concept is \"<span id=\"concName\">not available</span>\". </td>\n\n  <tr><th>Parent (optional)</th> <td>Concepts are organized in a hierarchy similar to files in a file system. The parent concept is the concept under which this concept is <i>filed</i>. If the parent concept is not specified, the concept is directly filed under the root concept of the repository. </td>\n\n  <tr><th>Category (optional)</th> <td>Categories are string identifiers that can be used to classify the type of a concept. <p class=\"small\">If you think of concept hierarchy as a file system, you can think of categories as the extensions of the file name, like \"html\", \"doc\" or \"zip\". </td>\n\n  <tr><th>Properties</th> <td>The properties of the concept. Discussed in the next unit. </td>\n\n  <tr><th>Is-a relationships</th> <td>The \"semantics\" of the concept. Discussed in the unit 5. </td>\n</table>\n\n<hr>\n\n<h3>Getting started with the IDE</h3>\n\n<p>Concepts are edited using the in-built IDE that you can access through your browser. You can take a look at this video to see how the IDE can be activated, and the various portions of the IDE.\n\n<br>\n\n<p><figure style=\"text-align: center\">\n\n<iframe src=\"//fast.wistia.net/embed/iframe/l5rlykam71?videoFoam=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width=\"854\" height=\"424\"></iframe><script src=\"//fast.wistia.net/assets/external/iframe-api-v1.js\"></script>\n\n</figure>\n\n<br>\n\n<p>As you can see, the entire workings of the application is transparent to the user. \n\n<br>\n\n<hr>\n\n<h3>Recap</h3>\n\n<ul class=\"recap\">\n<li>A concept is the shared understanding of something. \n<li>Concepts in ConceptJS must be modeled to mirror the mental concepts of the target user. \n<li>ConceptJS has a strict concept model consisting of a name, parent, category, properties and is-a relationships. \n<li>Concepts are organized in a hierarchy similar to a file system. \n<li>You can view any concept in the IDE to understand how it works. \n<li>The IDE consists of the finder, editor and debugger. \n</ul>\n\n<script>\n$(function() {\n  var conc = $cjs(anchorUri);\n  $(\"#concUri\").text(anchorUri);\n  $(\"#concName\").text(conc.name());\n});\n</script>"
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 2
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "zpsscV2vA3glcBTMRClHlA=="
+}

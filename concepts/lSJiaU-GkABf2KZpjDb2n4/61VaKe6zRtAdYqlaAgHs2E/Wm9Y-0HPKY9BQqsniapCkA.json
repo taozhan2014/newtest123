@@ -1,0 +1,41 @@
+{
+  "uri" : "local://Wm9Y-0HPKY9BQqsniapCkA/",
+  "name" : "Unit 5: Using JQuery to update properties",
+  "category" : "unit",
+  "parent" : "local://61VaKe6zRtAdYqlaAgHs2E/",
+  "pname" : "Course 100",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_unit_name",
+    "expr" : {
+      "str" : "Using JQuery to update properties"
+    }
+  }, {
+    "name" : "_unit_content",
+    "expr" : {
+      "str" : "<h3>Creating a form with first and last names</h3>\n\n<div class=\"sidenote well\">\n<p><em>ConceptJS as a code playground. </em>JSFiddle, CodePen, JSBin, Dabblet, CSSDeck, Bootply, Plunkr, ... these are some of the code playgrounds that let you build front-end code and test it directly through your browser. ConceptJS is the first code playground that lets you build linked data-driven applications, while staying true to the playground model that lets you play with &ldquo;one toy at a time.&rdquo; \n\n<p><em>One toy at a time. </em> CodePen can have a million pens, but you only look at the code related to the pen you are editing. Similarly, you can work on an app with a million concepts, but you will only look at the code/data related to the concept that you are editing. \n</div>\n\n<p>In the previous unit, we created a dynamic web page showing the properties of a concept. In this unit, we will turn the web page into a form with which you can edit the first and last names. The changes made in the form will be saved back into the concept's properties. \n\n<p>We first start with a static design of the form available <a href=\"http://codepen.io/lambdazen/pen/yyVBQm\" target=\"_blank\">at CodePen</a>. To keep things simple, we have not separated out the CSS and JS. You can always add separate concepts for CSS and JS as outlined in Units 2 and 3. \n\n<h4>Getting the names into the form</h4>\n\n<p>You can follow these steps to make the form show the first and last names: <ol>\n<li>Open the \"Hello Jane Doe\" concept in the IDE. \n<li>Copy the \"Hello Jane Doe\" concept in the Finder to the ConceptJS clipboard using the <span class=\"fa fa-bars\"></span> Copy option. \n<li>Paste the concept at the same level using the Add button's \"Paste from clipboard\" option in the Finder panel. \n<li>Open the pasted concept in the Editor using the <span class=\"fa fa-bars\"></span> Edit option. \n<li>Change the concept name from \"copy of Hello Jane Doe\" to \"Example jQuery Form\". \n<li>Change the <tt>firstName</tt> property to \"Jack\" and the <tt>lastName</tt> property to \"Smith\". \n<li>Copy-paste the HTML from this <a href=\"http://codepen.io/lambdazen/pen/yyVBQm\" target=\"_blank\">CodePen</a> to the <tt>htmlTemplate</tt> property. Surround the HTML with the &lt;body&gt; and &lt;/body&gt; tags. \n<li>Add the attributes <tt>value=\"{{firstName}}\"</tt> and <tt>value=\"{{lastName}}\"</tt> to the two &lt;input&gt; tags in the HTML. \n<li>Save the changes made in the Editor. \n<li>View the \"Example jQuery Form\" using the <span class=\"fa fa-bars\"></span> View option in the Editor's header. \n<li>You should see a form in the Viewer. The first name will be set to Jack and the last name will be set to Smith, because of the corresponding value attributes in the input tags. The save button will not work yet. \n</ol>\n\n<p>The following video demonstrates the steps outlined above: \n\n<hr>\n<iframe src=\"//fast.wistia.net/embed/iframe/nmmjh7ietj?videoFoam=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width=\"854\" height=\"463\"></iframe><script src=\"//fast.wistia.net/assets/external/iframe-api-v1.js\"></script>\n<hr>\n\n<h4>Saving the changes back to the form</h4>\n\n<p>We will now use the ConceptJS API to update the concept. Client-side scripts can use the <tt>$cjs</tt> global variable to access the various features of the ConceptJS API. The following script modifies the first and last names to John Resig. \n\n<pre>\n$cjs(\"[concept URI]\").prop(\"firstName\", \"John\").prop(\"lastName\", \"Resig\");\n$cjs.session.save();\n</pre>\n\n<p>As you can see the methods in <tt>$cjs</tt> are similar to jQuery in that they can be chained and that they can access concepts using selectors. The script <tt>$cjs(\"...\")</tt> loads the concept which is then updated using the two <tt>prop</tt> methods. You can access the value of a property using <tt>prop(\"firstName\").val()</tt>. \n\n<p>The second line in the script saves the changes made in the session. If that command is not executed, the page will pop out Save and Cancel buttons for the user to manually save the changes. \n\n<p>You can follow these steps to hook up the \"Save\" button to the action: <ol>\n<li>Open the \"Example jQuery Form\" concept in the IDE. \n<li>Select the <tt>htmlTemplate</tt> property in the Editor and insert the following &lt;script&gt; tag just before the last &lt;/body&gt; tag: \n<pre>\n&lt;script&gt;\n  var uri = \"{{{uri}}}\";\n  $(\"#saveBtn\").click(function() {\n    var firstName = $(\"#inputFN\").val();\n    var lastName = $(\"#inputLN\").val();\n    $cjs(uri).prop(\"firstName\", firstName).prop(\"lastName\", lastName);\n    $cjs.session.save();\n  });\n&lt;/script&gt;\n</pre>\n<li>Select the <tt>page</tt> property, and edit the <tt>propertyMap</tt> binding as shown below: \n<pre>\nCHANGE\n  return {firstName: firstName, lastName: lastName};\nTO\n  return {firstName: firstName, lastName: lastName, uri: home.uri()};\n</pre>\n<li>You can now view the concept. The changes made to the first and last names will now be saved back into the concept when the Save button below the form is clicked. Note that you will have to refresh the concept in the Editor, using the <span class=\"fa fa-refresh\"></span> button in the header, to see the changes made to the properties. \n</ol>\n\n<p>You should end up with a concept that looks like <a href=\"/ide/conceptjs/default/lnpDFXrc1684bK1NsCizn2/\" target=\"_blank\">this one</a>. Note that you can click the download link on the footer if you don't have the time to follow the above steps. \n\n<p>The following video demonstrates the above steps, along with a look at the internals of the concept in the Debugger. \n\n<hr>\n<iframe src=\"//fast.wistia.net/embed/iframe/84soaehu3w?videoFoam=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width=\"854\" height=\"463\"></iframe><script src=\"//fast.wistia.net/assets/external/iframe-api-v1.js\"></script>\n<hr>\n\n<h4>How it works</h4>\n\n<p>The <tt>home</tt> variable in the server-side script refers to the concept that is being evaluated. In this case, the home refers to the \"jQuery Form\" concept, and home.uri() refers to the URI of the concept. This uri is passed through Mustache to the client-side code. You should avoid hard-coding URIs in the client side, especially when the referenced concept is something that others might copy. \n\n<h3>Recap</h3>\n\n<ul class=\"recap\">\n<li>You can create dynamic pages on the server-side using Mustache templates. \n<li>Client-side scripts can use the <tt>$cjs</tt> variable to query and update properties in concepts, and save/discard editing sessions. \n</ul>\n\n<p>In the next unit, we will use KnockoutJS to simplify the form. \n"
+    }
+  }, {
+    "name" : "_unit_number",
+    "expr" : {
+      "num" : 5
+    }
+  }, {
+    "name" : "unit",
+    "expr" : {
+      "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "conceptName" : "Course Unit",
+      "bindings" : {
+        "name" : "_unit_name",
+        "content" : "_unit_content",
+        "number" : "_unit_number"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "unit"
+  } ],
+  "isLambda" : false,
+  "digest" : "in3NKavBIaJrV3qk0ahBgA=="
+}

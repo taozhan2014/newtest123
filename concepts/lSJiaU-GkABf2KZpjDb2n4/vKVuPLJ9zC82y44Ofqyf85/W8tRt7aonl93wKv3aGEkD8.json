@@ -1,0 +1,37 @@
+{
+  "uri" : "local://W8tRt7aonl93wKv3aGEkD8/",
+  "name" : "Course Unit Index Type",
+  "category" : "",
+  "parent" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+  "pname" : "Course Unit",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_type_indexUri",
+    "expr" : {
+      "str" : "local://vKVuPLJ9zC82y44Ofqyf85/",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_type_fieldTypes",
+    "expr" : {
+      "str" : "{ \"uri\" : { \"type\" : \"string\", \"index\" : \"not_analyzed\" },\n   \"number\" : { \"type\" : \"integer\"},\n  \"name\" : { \"type\" : \"string\" },\n  \"courseNumber\" : { \"type\" : \"integer\" },\n  \"courseName\" : { \"type\" : \"string\"},\n  \"isCJSCourse\" : { \"type\" : \"boolean\"}  }",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "type",
+    "expr" : {
+      "concept" : "/common/core/2ZCZ-kBJFDAkW4sQSVsBs8/",
+      "conceptName" : "Lucene Index Entry Type",
+      "bindings" : {
+        "indexUri" : "_type_indexUri",
+        "fieldTypes" : "_type_fieldTypes"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "type"
+  } ],
+  "isLambda" : false,
+  "digest" : "j4ZoYNAiavLcv4QgRWqicw=="
+}

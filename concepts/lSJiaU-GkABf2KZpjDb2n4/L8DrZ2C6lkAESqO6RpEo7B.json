@@ -1,0 +1,18 @@
+{
+  "uri" : "local://L8DrZ2C6lkAESqO6RpEo7B/",
+  "name" : "User Courses (Editor's Picks)",
+  "category" : "",
+  "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
+  "pname" : "Root Concept for univ",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "userCourseUris",
+    "expr" : {
+      "json" : [ ]
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false,
+  "digest" : "Y43NHrPoPqn3gy0udIMHmw=="
+}

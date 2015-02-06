@@ -1,0 +1,51 @@
+{
+  "uri" : "local://mTkMVbp7HZ97-KZ4YjRoN5/",
+  "name" : "Tim BL v3",
+  "category" : "",
+  "parent" : "local://hWApMtguPa8DJKFW6cETK5/",
+  "pname" : "Unit 5: Is-a relationships",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_programmer_firstName",
+    "expr" : {
+      "str" : "Tim",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_programmer_lastName",
+    "expr" : {
+      "str" : "Berners-Lee",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_programmer_bio",
+    "expr" : {
+      "str" : "Sir Timothy John \"Tim\" Berners-Lee, (born 8 June 1955), also known as \"TimBL\", is an English computer scientist, best known as the inventor of the World Wide Web. He made a proposal for an information management system in March 1989,[4] and he implemented the first successful communication between a Hypertext Transfer Protocol (HTTP) client and server via the Internet sometime around mid November of that same year.",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_programmer_imageUrl",
+    "expr" : {
+      "str" : "http://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Tim_Berners-Lee_2012.jpg/220px-Tim_Berners-Lee_2012.jpg",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "programmer",
+    "expr" : {
+      "concept" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
+      "conceptName" : "Programmer v2",
+      "bindings" : {
+        "firstName" : "_programmer_firstName",
+        "lastName" : "_programmer_lastName",
+        "bio" : "_programmer_bio",
+        "imageUrl" : "_programmer_imageUrl"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "programmer"
+  } ],
+  "isLambda" : false,
+  "digest" : "C9zU2A6Iw7d9DwRCnUZpvQ=="
+}

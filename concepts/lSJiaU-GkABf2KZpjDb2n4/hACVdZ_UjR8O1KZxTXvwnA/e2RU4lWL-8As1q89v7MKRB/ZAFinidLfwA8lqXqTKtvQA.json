@@ -1,0 +1,47 @@
+{
+  "uri" : "local://ZAFinidLfwA8lqXqTKtvQA/",
+  "name" : "Programmer v1",
+  "category" : "",
+  "parent" : "local://e2RU4lWL-8As1q89v7MKRB/",
+  "pname" : "Unit 4: Lambda properties and concepts",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "firstName",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  }, {
+    "name" : "lastName",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  }, {
+    "name" : "hasBeard",
+    "type" : "/common/types/74mIR2uFvPAAiqCdiDkp18/",
+    "typeName" : "boolean",
+    "default" : {
+      "bool" : false
+    }
+  }, {
+    "name" : "bio",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string",
+    "default" : {
+      "str" : "N/A"
+    }
+  } ],
+  "vars" : [ {
+    "name" : "fullName",
+    "expr" : {
+      "script" : "console.log('Calculating the full name for ' + firstName);\nreturn firstName + ' ' + lastName;"
+    }
+  } ],
+  "isas" : [ {
+    "concept" : "local://F_7ot-6UZ3Bk54p3MAAyJA/",
+    "conceptName" : "Programmer with beard",
+    "oncVar" : "hasBeard"
+  }, {
+    "concept" : "local://W8OIzpA4Q88vwqtXvTfhLC/",
+    "conceptName" : "Programmer v1 View"
+  } ],
+  "isLambda" : true,
+  "digest" : "fWBZ4Io5bx67zlxX92M5Zg=="
+}

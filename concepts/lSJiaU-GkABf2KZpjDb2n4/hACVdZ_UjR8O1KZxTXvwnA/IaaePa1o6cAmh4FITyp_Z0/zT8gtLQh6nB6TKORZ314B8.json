@@ -1,0 +1,30 @@
+{
+  "uri" : "local://zT8gtLQh6nB6TKORZ314B8/",
+  "name" : "Hello World",
+  "category" : "",
+  "parent" : "local://IaaePa1o6cAmh4FITyp_Z0/",
+  "pname" : "Unit 9: Core concepts for searching, downloading, naming and RDF export",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "html",
+    "expr" : {
+      "str" : "<head>\n    <link rel=\"stylesheet\" href=\"/resourcelocal://6DhcqTtJroADbqmpk9U3x4/\">\n</head>\n<body>\n    <h1 class=\"notfunny\">Hello World!</h1>\n</body>",
+      "strEditMode" : "html"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "conceptName" : "HTML Page",
+      "bindings" : {
+        "html" : "html"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false,
+  "digest" : "EQZBvA4ZK59CVie8wcG+LA=="
+}

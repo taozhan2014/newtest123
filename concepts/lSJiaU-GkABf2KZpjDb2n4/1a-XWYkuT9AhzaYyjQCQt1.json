@@ -1,0 +1,18 @@
+{
+  "uri" : "local://1a-XWYkuT9AhzaYyjQCQt1/",
+  "name" : "ConceptJS Courses",
+  "category" : "",
+  "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
+  "pname" : "Root Concept for univ",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "cjsCourseUris",
+    "expr" : {
+      "json" : [ "local://61VaKe6zRtAdYqlaAgHs2E/", "local://hACVdZ_UjR8O1KZxTXvwnA/" ]
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false,
+  "digest" : "p9aUKmrwmNrEZZ50mcwc8A=="
+}

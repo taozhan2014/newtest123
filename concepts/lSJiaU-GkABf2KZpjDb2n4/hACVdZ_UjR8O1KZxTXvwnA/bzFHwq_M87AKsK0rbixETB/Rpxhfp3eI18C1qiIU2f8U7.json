@@ -1,0 +1,41 @@
+{
+  "uri" : "local://Rpxhfp3eI18C1qiIU2f8U7/",
+  "name" : "James Gosling v1",
+  "category" : "",
+  "parent" : "local://bzFHwq_M87AKsK0rbixETB/",
+  "pname" : "Unit 3: Simple properties and concepts",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "firstName",
+    "expr" : {
+      "str" : "James",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "lastName",
+    "expr" : {
+      "str" : "Gosling",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "fullName",
+    "expr" : {
+      "script" : "return firstName + ' ' + lastName;"
+    }
+  }, {
+    "name" : "hasBeard",
+    "expr" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "bio",
+    "expr" : {
+      "str" : "Father of the Java programming language",
+      "strEditMode" : ""
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false,
+  "digest" : "II7ABg/+xBH3VdL02OAtbg=="
+}

@@ -1,0 +1,40 @@
+{
+  "uri" : "local://sgklo11o2YAkQKY9PxovS8/",
+  "name" : "Programmer v2 View",
+  "category" : "",
+  "parent" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
+  "pname" : "Programmer v2",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "model",
+    "type" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
+    "typeName" : "Programmer v2"
+  } ],
+  "vars" : [ {
+    "name" : "htmlTemplate",
+    "expr" : {
+      "str" : "<div class=\"container-fluid\">\r\n<div class=\"row\">\r\n  <div class=\"col-sm-1 col-xs-0\"></div>\r\n<div class=\"col-sm-7 col-xs-12\">\r\n<h1>{{title}}</h1>\r\n\r\n<p>{{bio}}\r\n</div>\r\n\r\n<div class=\"col-sm-3 col-xs-12\">\r\n  <figure style=\"padding: 10px\">\r\n    <img class=\"img-responsive\" src=\"{{imageUrl}}\">\r\n  </figure>\r\n</div>\r\n<div class=\"col-sm-1 col-xs-0\"></div>\r\n</div>\r\n</div>",
+      "strEditMode" : "html"
+    }
+  }, {
+    "name" : "_page_propertyMap",
+    "expr" : {
+      "script" : "return {\"title\": model.prop(\"fullName\").val(), \"bio\": model.prop(\"bio\").val(), \"imageUrl\": model.prop(\"imageUrl\").val()};"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/Xfh2VQ4HSK9klqbqqR-eBB/",
+      "conceptName" : "Mustache HTML Page",
+      "bindings" : {
+        "htmlTemplate" : "htmlTemplate",
+        "propertyMap" : "_page_propertyMap"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : true,
+  "digest" : "ZiBgnv3aDiqN98AjKefkPA=="
+}

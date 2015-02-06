@@ -1,0 +1,40 @@
+{
+  "uri" : "local://MJEJcO98f19XvqVJoaoFb5/",
+  "name" : "Programmer v2 RDF",
+  "category" : "",
+  "parent" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
+  "pname" : "Programmer v2",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "model",
+    "type" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
+    "typeName" : "Programmer v2"
+  } ],
+  "vars" : [ {
+    "name" : "rdfTemplate",
+    "expr" : {
+      "str" : "<rdf:RDF\r\n      xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\r\n      xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\r\n      xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\r\n      xmlns:admin=\"http://webns.net/mvcb/\">\r\n<foaf:PersonalProfileDocument rdf:about=\"\">\r\n  <foaf:maker rdf:resource=\"#me\"/>\r\n  <foaf:primaryTopic rdf:resource=\"#me\"/>\r\n  <admin:generatorAgent rdf:resource=\"http://www.ldodds.com/foaf/foaf-a-matic\"/>\r\n  <admin:errorReportsTo rdf:resource=\"mailto:leigh@ldodds.com\"/>\r\n</foaf:PersonalProfileDocument>\r\n<foaf:Person rdf:ID=\"me\">\r\n<foaf:name>{{fullName}}</foaf:name>\r\n<foaf:givenname>{{firstName}}</foaf:givenname>\r\n<foaf:family_name>{{lastName}}</foaf:family_name>\r\n<foaf:depiction rdf:resource=\"{{imageUrl}}\"/></foaf:Person>\r\n</rdf:RDF>",
+      "strEditMode" : "html"
+    }
+  }, {
+    "name" : "_rdfResource_propertyMap",
+    "expr" : {
+      "script" : "return {\"fullName\": model.prop(\"fullName\").val(),\n  \"firstName\": model.prop(\"firstName\").val(),\n  \"lastName\": model.prop(\"lastName\").val(),\n  \"imageUrl\": model.prop(\"imageUrl\").val()};\n"
+    }
+  }, {
+    "name" : "rdfResource",
+    "expr" : {
+      "concept" : "/common/core/T9FO2RY3fuAx4q6AAp7ET7/",
+      "conceptName" : "Mustache RDF XML",
+      "bindings" : {
+        "XMLTemplate" : "rdfTemplate",
+        "propertyMap" : "_rdfResource_propertyMap"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "rdfResource"
+  } ],
+  "isLambda" : true,
+  "digest" : "VhjxEHqMLelOeZXZ4ENRyw=="
+}

@@ -1,0 +1,35 @@
+{
+  "uri" : "local://E40ZSmDZ3q89eafTdvRjvC/",
+  "name" : "Course Reader",
+  "category" : "",
+  "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
+  "pname" : "Root Concept for univ",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "course",
+    "type" : "local://GWUiaDKhGKAJsKG1W9fqV0/",
+    "typeName" : "Course"
+  }, {
+    "name" : "readerType",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string"
+  }, {
+    "name" : "curUnitNumber",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
+    "typeName" : "number"
+  }, {
+    "name" : "returnUri",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "typeName" : "string",
+    "default" : {
+      "str" : ""
+    }
+  } ],
+  "vars" : [ ],
+  "isas" : [ {
+    "concept" : "local://eTJFF-_6LMBymaKsmsPttF/",
+    "conceptName" : "Course Reader View"
+  } ],
+  "isLambda" : true,
+  "digest" : "EeqKFW/Ij+gEt//rxSzilg=="
+}
