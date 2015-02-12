@@ -3,7 +3,7 @@
   "name" : "common_local://mTkMVbp7HZ97-KZ4YjRoN5/_thumbnail",
   "category" : "",
   "parent" : "local://mTkMVbp7HZ97-KZ4YjRoN5/",
-  "pname" : "Tim BL v3",
+  "pname" : "User Binary Resources",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -30,7 +30,7 @@
     "name" : "resource",
     "expr" : {
       "concept" : "/common/core/BLTv0pGnFoAPG4Q4YV8KS1/",
-      "conceptName" : "Attachment Resource",
+      "conceptName" : "Image Resource",
       "bindings" : {
         "type" : "type",
         "attachmentLink" : "attachmentLink",
@@ -42,6 +42,5 @@
   "isas" : [ {
     "var" : "resource"
   } ],
-  "isLambda" : false,
-  "digest" : "XzdRRVf1CmvIJkLAr8+O+g=="
+  "isLambda" : false
 }

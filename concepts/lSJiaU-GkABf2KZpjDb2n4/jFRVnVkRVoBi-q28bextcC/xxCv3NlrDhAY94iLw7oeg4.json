@@ -3,7 +3,6 @@
   "name" : "course_index.js",
   "category" : "js",
   "parent" : "local://jFRVnVkRVoBi-q28bextcC/",
-  "pname" : "Resources (Folder)",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -22,7 +21,6 @@
     "name" : "javascriptResource",
     "expr" : {
       "concept" : "/common/core/nK_9eZMUDp8T6qqr7t5k67/",
-      "conceptName" : "Javascript Resource",
       "bindings" : {
         "js" : "jsContent",
         "fileName" : "_javascriptResource_fileName"
@@ -31,7 +29,5 @@
   } ],
   "isas" : [ {
     "var" : "javascriptResource"
-  } ],
-  "isLambda" : false,
-  "digest" : "mgAYM4jk7KR1g2jrXCLeKw=="
+  } ]
 }

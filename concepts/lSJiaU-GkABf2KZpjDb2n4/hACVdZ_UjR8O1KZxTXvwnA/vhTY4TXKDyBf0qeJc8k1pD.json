@@ -25,6 +25,5 @@
   } ],
   "isas" : [ ],
   "isLambda" : false,
-  "activeScript" : "{\n  foo: function(comment) {\n      //home.prop('lastUser').val($cjs.currentUser);\n      home.prop('lastComment').val(comment);\n      var counter = home.prop('counter').val() + 1;\n      home.prop('counter').val(counter);\n      return {\"counter\": counter, \"lastComment\": comment};\n  }\n}\n",
-  "digest" : "tRaYpGXMEehXoREolVn30g=="
+  "activeScript" : "{\n  foo: function(comment) {\n      //home.prop('lastUser').val($cjs.currentUser);\n      home.prop('lastComment').val(comment);\n      var counter = home.prop('counter').val() + 1;\n      home.prop('counter').val(counter);\n      return {\"counter\": counter, \"lastComment\": comment};\n  }\n}\n"
 }

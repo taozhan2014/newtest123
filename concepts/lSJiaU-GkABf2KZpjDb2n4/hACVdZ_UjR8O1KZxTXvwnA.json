@@ -36,6 +36,5 @@
   "isas" : [ {
     "var" : "course"
   } ],
-  "isLambda" : false,
-  "digest" : "HIQwHJ7b06Rm8LNnPMal3Q=="
+  "isLambda" : false
 }

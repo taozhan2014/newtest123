@@ -3,11 +3,8 @@
   "name" : "Programmer with beard",
   "category" : "",
   "parent" : "local://e2RU4lWL-8As1q89v7MKRB/",
-  "pname" : "Unit 4: Lambda properties and concepts",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ ],
-  "isas" : [ ],
-  "isLambda" : false,
-  "digest" : "8D50KJXupFUqFICCE8JbnA=="
+  "isas" : [ ]
 }

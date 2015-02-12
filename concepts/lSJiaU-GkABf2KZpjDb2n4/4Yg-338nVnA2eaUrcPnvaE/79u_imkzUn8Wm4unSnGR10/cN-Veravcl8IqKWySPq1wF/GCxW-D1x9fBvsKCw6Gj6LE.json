@@ -9,8 +9,7 @@
   "vars" : [ {
     "name" : "_reader_course",
     "expr" : {
-      "concept" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
-      "conceptName" : "Course 101"
+      "concept" : "local://hACVdZ_UjR8O1KZxTXvwnA/"
     }
   }, {
     "name" : "_reader_readerType",
@@ -45,6 +44,5 @@
   "isas" : [ {
     "var" : "reader"
   } ],
-  "isLambda" : false,
-  "digest" : "AYsJiukbgA64AFWMnQgWXQ=="
+  "isLambda" : false
 }

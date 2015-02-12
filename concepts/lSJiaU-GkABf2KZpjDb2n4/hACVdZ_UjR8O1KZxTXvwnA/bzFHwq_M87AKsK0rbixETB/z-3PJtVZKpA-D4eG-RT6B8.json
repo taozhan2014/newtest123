@@ -3,7 +3,6 @@
   "name" : "Tim BL v1",
   "category" : "",
   "parent" : "local://bzFHwq_M87AKsK0rbixETB/",
-  "pname" : "Unit 3: Simple properties and concepts",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -29,7 +28,5 @@
       "bool" : false
     }
   } ],
-  "isas" : [ ],
-  "isLambda" : false,
-  "digest" : "lhqd2oVgbjkli37dhmsL4g=="
+  "isas" : [ ]
 }

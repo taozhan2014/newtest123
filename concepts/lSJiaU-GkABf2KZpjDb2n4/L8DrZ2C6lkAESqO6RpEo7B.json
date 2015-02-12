@@ -3,7 +3,6 @@
   "name" : "User Courses (Editor's Picks)",
   "category" : "",
   "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
-  "pname" : "Root Concept for univ",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -12,7 +11,5 @@
       "json" : [ ]
     }
   } ],
-  "isas" : [ ],
-  "isLambda" : false,
-  "digest" : "Y43NHrPoPqn3gy0udIMHmw=="
+  "isas" : [ ]
 }

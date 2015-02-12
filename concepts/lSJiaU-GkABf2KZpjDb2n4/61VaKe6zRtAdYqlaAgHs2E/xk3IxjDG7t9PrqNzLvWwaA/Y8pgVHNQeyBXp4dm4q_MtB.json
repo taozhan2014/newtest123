@@ -42,6 +42,5 @@
   "isas" : [ {
     "var" : "resource"
   } ],
-  "isLambda" : false,
-  "digest" : "B/TpNz4cuAU6Nat0S/MjTA=="
+  "isLambda" : false
 }

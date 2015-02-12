@@ -3,7 +3,6 @@
   "name" : "CJS link and redirect tests",
   "category" : "",
   "parent" : "local://E40ZSmDZ3q89eafTdvRjvC/",
-  "pname" : "Course Reader",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -16,7 +15,6 @@
     "name" : "page",
     "expr" : {
       "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
-      "conceptName" : "HTML Page",
       "bindings" : {
         "html" : "_page_html"
       }
@@ -24,7 +22,5 @@
   } ],
   "isas" : [ {
     "var" : "page"
-  } ],
-  "isLambda" : false,
-  "digest" : "kVIRJrMhqN8+ELIqI03edQ=="
+  } ]
 }

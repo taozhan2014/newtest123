@@ -4,8 +4,22 @@
   "category" : "",
   "flags" : "U",
   "lvars" : [ ],
-  "vars" : [ ],
-  "isas" : [ ],
-  "isLambda" : false,
-  "digest" : "Pg/tz2HR8V2ZzG/d6h6W+g=="
+  "vars" : [ {
+    "name" : "_repo_repoUri",
+    "expr" : {
+      "str" : "/common/univ/"
+    }
+  }, {
+    "name" : "repo",
+    "expr" : {
+      "concept" : "/common/core/dikjRMQUWrB_rK4hvxvxP8/",
+      "bindings" : {
+        "repoUri" : "_repo_repoUri"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "repo"
+  } ],
+  "isLambda" : false
 }

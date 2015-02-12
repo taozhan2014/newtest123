@@ -30,6 +30,5 @@
   "isas" : [ {
     "var" : "cssResource"
   } ],
-  "isLambda" : false,
-  "digest" : "CLchUkpjgWzOmvmZlzS/ig=="
+  "isLambda" : false
 }

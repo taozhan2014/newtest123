@@ -3,7 +3,6 @@
   "name" : "course.css",
   "category" : "css",
   "parent" : "local://jFRVnVkRVoBi-q28bextcC/",
-  "pname" : "Resources (Folder)",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -22,7 +21,6 @@
     "name" : "cssResource",
     "expr" : {
       "concept" : "/common/core/D_CaDRd425Aqj4mtY9Oh1B/",
-      "conceptName" : "CSS Resource",
       "bindings" : {
         "css" : "cssContent",
         "fileName" : "_cssResource_fileName"
@@ -31,7 +29,5 @@
   } ],
   "isas" : [ {
     "var" : "cssResource"
-  } ],
-  "isLambda" : false,
-  "digest" : "kI5HBJ33TvP0dw3AfK/+Hg=="
+  } ]
 }

@@ -3,7 +3,6 @@
   "name" : "Hello World",
   "category" : "",
   "parent" : "local://IaaePa1o6cAmh4FITyp_Z0/",
-  "pname" : "Unit 9: Core concepts for searching, downloading, naming and RDF export",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -16,7 +15,6 @@
     "name" : "page",
     "expr" : {
       "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
-      "conceptName" : "HTML Page",
       "bindings" : {
         "html" : "html"
       }
@@ -24,7 +22,5 @@
   } ],
   "isas" : [ {
     "var" : "page"
-  } ],
-  "isLambda" : false,
-  "digest" : "EQZBvA4ZK59CVie8wcG+LA=="
+  } ]
 }

@@ -3,18 +3,14 @@
   "name" : "Lambda Null Test",
   "category" : "",
   "parent" : "local://EcbDfbUejoAT2KYAaj7buA/",
-  "pname" : "Unit 1: Introduction",
   "flags" : "U",
   "lvars" : [ {
     "name" : "foo",
     "type" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
-    "typeName" : "HTML Page",
     "default" : {
       "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/"
     }
   } ],
   "vars" : [ ],
-  "isas" : [ ],
-  "isLambda" : true,
-  "digest" : "7oLHjQMNOETy+TeKmt8J0w=="
+  "isas" : [ ]
 }

@@ -3,7 +3,6 @@
   "name" : "Course Unit Index Type",
   "category" : "",
   "parent" : "local://vKVuPLJ9zC82y44Ofqyf85/",
-  "pname" : "Course Unit",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -22,7 +21,6 @@
     "name" : "type",
     "expr" : {
       "concept" : "/common/core/2ZCZ-kBJFDAkW4sQSVsBs8/",
-      "conceptName" : "Lucene Index Entry Type",
       "bindings" : {
         "indexUri" : "_type_indexUri",
         "fieldTypes" : "_type_fieldTypes"
@@ -31,7 +29,5 @@
   } ],
   "isas" : [ {
     "var" : "type"
-  } ],
-  "isLambda" : false,
-  "digest" : "j4ZoYNAiavLcv4QgRWqicw=="
+  } ]
 }

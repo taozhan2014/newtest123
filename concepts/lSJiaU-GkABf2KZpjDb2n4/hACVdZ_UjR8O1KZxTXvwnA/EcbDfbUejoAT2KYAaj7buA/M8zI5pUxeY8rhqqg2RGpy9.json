@@ -3,7 +3,6 @@
   "name" : "Simple Null Test",
   "category" : "",
   "parent" : "local://EcbDfbUejoAT2KYAaj7buA/",
-  "pname" : "Unit 1: Introduction",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -15,24 +14,19 @@
     "name" : "bar",
     "expr" : {
       "concept" : "local://MKakzVFFQTBKFaFJimoap6/",
-      "conceptName" : "Lambda Null Test",
       "bindings" : { }
     }
   }, {
     "name" : "baz",
     "expr" : {
-      "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/",
-      "conceptName" : "Null"
+      "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/"
     }
   }, {
     "name" : "voo",
     "expr" : {
       "concept" : "local://MKakzVFFQTBKFaFJimoap6/",
-      "conceptName" : "Lambda Null Test",
       "bindings" : { }
     }
   } ],
-  "isas" : [ ],
-  "isLambda" : false,
-  "digest" : "bQoOwLmdnrqB7Zb02qPm7w=="
+  "isas" : [ ]
 }

@@ -35,6 +35,5 @@
   "isas" : [ {
     "var" : "rdfResource"
   } ],
-  "isLambda" : true,
-  "digest" : "VhjxEHqMLelOeZXZ4ENRyw=="
+  "isLambda" : true
 }

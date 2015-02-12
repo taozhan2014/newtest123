@@ -3,30 +3,23 @@
   "name" : "Course",
   "category" : "",
   "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
-  "pname" : "Root Concept for univ",
   "flags" : "U",
   "lvars" : [ {
     "name" : "number",
-    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
-    "typeName" : "string"
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
   }, {
     "name" : "name",
-    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
-    "typeName" : "string"
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
   }, {
     "name" : "description",
     "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
-    "typeName" : "string",
     "default" : {
       "str" : ""
     }
   } ],
   "vars" : [ ],
   "isas" : [ {
-    "concept" : "local://aYqMdWj1rbBA_a9hJpyfKD/",
-    "conceptName" : "Course View"
+    "concept" : "local://aYqMdWj1rbBA_a9hJpyfKD/"
   } ],
-  "isLambda" : true,
-  "activeScript" : "{\n    getSortedUnitUris: function(){\n        var unitUri = 'local://vKVuPLJ9zC82y44Ofqyf85/';\n        var units = _.map(home.anchor().children('unit'), function(unit) { return unit.as(unitUri); });\n\n        return _.map(_.sortBy(units, function(unit) { return unit.prop('number').val(); }), function (unit) { return unit.uri() });\n    }\n}\n",
-  "digest" : "ns43UJoSjMPTFUxfp7NgIQ=="
+  "activeScript" : "{\n    getSortedUnitUris: function(){\n        var unitUri = 'local://vKVuPLJ9zC82y44Ofqyf85/';\n        var units = _.map(home.anchor().children('unit'), function(unit) { return unit.as(unitUri); });\n\n        return _.map(_.sortBy(units, function(unit) { return unit.prop('number').val(); }), function (unit) { return unit.uri() });\n    }\n}\n"
 }

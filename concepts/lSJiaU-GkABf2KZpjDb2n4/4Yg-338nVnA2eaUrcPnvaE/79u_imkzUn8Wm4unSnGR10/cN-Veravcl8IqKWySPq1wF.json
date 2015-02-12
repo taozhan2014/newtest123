@@ -3,7 +3,6 @@
   "name" : "Reader (Folder)",
   "category" : ".readers",
   "parent" : "local://79u_imkzUn8Wm4unSnGR10/",
-  "pname" : "Course",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -22,7 +21,6 @@
     "name" : "folder",
     "expr" : {
       "concept" : "/common/core/wsKVkUn9bNAX_qlv_2Nvm6/",
-      "conceptName" : "Folder",
       "bindings" : {
         "name" : "folderName",
         "description" : "_folder_description"
@@ -31,7 +29,5 @@
   } ],
   "isas" : [ {
     "var" : "folder"
-  } ],
-  "isLambda" : false,
-  "digest" : "/xGcb7OHffzhhJL5lChCQA=="
+  } ]
 }

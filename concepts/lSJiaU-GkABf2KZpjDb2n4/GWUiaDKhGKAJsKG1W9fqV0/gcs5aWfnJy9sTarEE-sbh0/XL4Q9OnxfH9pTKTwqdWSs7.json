@@ -3,7 +3,6 @@
   "name" : "Example Course Unit 2",
   "category" : "unit",
   "parent" : "local://gcs5aWfnJy9sTarEE-sbh0/",
-  "pname" : "Example Course",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -27,7 +26,6 @@
     "name" : "unit",
     "expr" : {
       "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
-      "conceptName" : "Course Unit",
       "bindings" : {
         "name" : "_unit_name",
         "content" : "_unit_content",
@@ -37,7 +35,5 @@
   } ],
   "isas" : [ {
     "var" : "unit"
-  } ],
-  "isLambda" : false,
-  "digest" : "5bgh+LARLEJCxJu2MeQRvA=="
+  } ]
 }

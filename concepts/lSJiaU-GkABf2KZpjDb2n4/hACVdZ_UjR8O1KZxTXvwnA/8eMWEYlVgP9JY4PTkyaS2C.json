@@ -3,7 +3,6 @@
   "name" : "Example showing data variable",
   "category" : "eg",
   "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
-  "pname" : "Course 101",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -25,7 +24,6 @@
     "name" : "page",
     "expr" : {
       "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
-      "conceptName" : "HTML Page",
       "bindings" : {
         "html" : "_page_html"
       }
@@ -33,7 +31,5 @@
   } ],
   "isas" : [ {
     "var" : "page"
-  } ],
-  "isLambda" : false,
-  "digest" : "HHhzmsI0vbDp+GJc4EWlZQ=="
+  } ]
 }

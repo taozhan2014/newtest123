@@ -3,21 +3,16 @@
   "name" : "Course Index",
   "category" : "",
   "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
-  "pname" : "Root Concept for univ",
   "flags" : "U",
   "lvars" : [ {
     "name" : "lastVisitCourse",
     "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
-    "typeName" : "string",
     "default" : {
       "str" : ""
     }
   } ],
   "vars" : [ ],
   "isas" : [ {
-    "concept" : "local://1ZzvwXt2FK9Ke4X1e8EJN1/",
-    "conceptName" : "Course Index View"
-  } ],
-  "isLambda" : true,
-  "digest" : "jqTnhftrsXPILDROWiRZOA=="
+    "concept" : "local://1ZzvwXt2FK9Ke4X1e8EJN1/"
+  } ]
 }

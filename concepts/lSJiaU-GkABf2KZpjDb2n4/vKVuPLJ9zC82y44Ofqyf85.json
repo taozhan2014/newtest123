@@ -3,20 +3,16 @@
   "name" : "Course Unit",
   "category" : "",
   "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
-  "pname" : "Root Concept for univ",
   "flags" : "U",
   "lvars" : [ {
     "name" : "name",
-    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
-    "typeName" : "string"
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
   }, {
     "name" : "content",
-    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
-    "typeName" : "string"
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
   }, {
     "name" : "number",
-    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
-    "typeName" : "number"
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/"
   } ],
   "vars" : [ {
     "name" : "_namedConcept_name",
@@ -27,7 +23,6 @@
     "name" : "namedConcept",
     "expr" : {
       "concept" : "/common/core/qE-eyN-QBBBJuqiaFW-2l1/",
-      "conceptName" : "Named Concept",
       "bindings" : {
         "name" : "_namedConcept_name"
       }
@@ -50,27 +45,22 @@
   }, {
     "name" : "_index_type",
     "expr" : {
-      "concept" : "local://W8tRt7aonl93wKv3aGEkD8/",
-      "conceptName" : "Course Unit Index Type"
+      "concept" : "local://W8tRt7aonl93wKv3aGEkD8/"
     }
   }, {
     "name" : "index",
     "expr" : {
       "concept" : "/common/core/0mSE4ISzLM8fkKj3BVBy7A/",
-      "conceptName" : "Lucene Index Entry",
       "bindings" : {
         "type" : "_index_type"
       }
     }
   } ],
   "isas" : [ {
-    "concept" : "local://N7dkAN11eeAsMKzVtAHe7E/",
-    "conceptName" : "Course Unit View"
+    "concept" : "local://N7dkAN11eeAsMKzVtAHe7E/"
   }, {
     "var" : "namedConcept"
   }, {
     "var" : "index"
-  } ],
-  "isLambda" : true,
-  "digest" : "+jWn+JBsMAIfupC0Zjxeuw=="
+  } ]
 }

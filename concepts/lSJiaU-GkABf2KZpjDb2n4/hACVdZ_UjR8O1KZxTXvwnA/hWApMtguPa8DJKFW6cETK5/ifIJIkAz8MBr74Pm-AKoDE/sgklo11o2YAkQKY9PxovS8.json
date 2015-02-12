@@ -3,12 +3,10 @@
   "name" : "Programmer v2 View",
   "category" : "",
   "parent" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
-  "pname" : "Programmer v2",
   "flags" : "U",
   "lvars" : [ {
     "name" : "model",
-    "type" : "local://ifIJIkAz8MBr74Pm-AKoDE/",
-    "typeName" : "Programmer v2"
+    "type" : "local://ifIJIkAz8MBr74Pm-AKoDE/"
   } ],
   "vars" : [ {
     "name" : "htmlTemplate",
@@ -25,7 +23,6 @@
     "name" : "page",
     "expr" : {
       "concept" : "/common/core/Xfh2VQ4HSK9klqbqqR-eBB/",
-      "conceptName" : "Mustache HTML Page",
       "bindings" : {
         "htmlTemplate" : "htmlTemplate",
         "propertyMap" : "_page_propertyMap"
@@ -34,7 +31,5 @@
   } ],
   "isas" : [ {
     "var" : "page"
-  } ],
-  "isLambda" : true,
-  "digest" : "ZiBgnv3aDiqN98AjKefkPA=="
+  } ]
 }

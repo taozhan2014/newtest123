@@ -1,6 +1,7 @@
 ## Course 100
 
 The code for the following concepts can be found here: 
+
 - [b0BLwTtRVIB62apaHtilh7.json](b0BLwTtRVIB62apaHtilh7.json): Unit 10: Sharing and permissions
 - [xk3IxjDG7t9PrqNzLvWwaA.json](xk3IxjDG7t9PrqNzLvWwaA.json): Unit 1: Hello World
 - [6tcBC5kvIMAXDqn5sLFoMF.json](6tcBC5kvIMAXDqn5sLFoMF.json): Unit 2: Adding a CSS resource

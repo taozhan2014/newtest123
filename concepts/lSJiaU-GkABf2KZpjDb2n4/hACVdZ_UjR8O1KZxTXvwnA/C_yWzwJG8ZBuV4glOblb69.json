@@ -36,6 +36,5 @@
   "isas" : [ {
     "var" : "unit"
   } ],
-  "isLambda" : false,
-  "digest" : "zpsscV2vA3glcBTMRClHlA=="
+  "isLambda" : false
 }

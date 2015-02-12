@@ -3,12 +3,10 @@
   "name" : "Course Index View",
   "category" : "",
   "parent" : "local://Im-hwEGR8wB4_4Q6c20se6/",
-  "pname" : "Course Index",
   "flags" : "U",
   "lvars" : [ {
     "name" : "model",
-    "type" : "local://Im-hwEGR8wB4_4Q6c20se6/",
-    "typeName" : "Course Index"
+    "type" : "local://Im-hwEGR8wB4_4Q6c20se6/"
   } ],
   "vars" : [ {
     "name" : "htmlTemplate",
@@ -25,7 +23,6 @@
     "name" : "page",
     "expr" : {
       "concept" : "/common/core/Xfh2VQ4HSK9klqbqqR-eBB/",
-      "conceptName" : "Mustache HTML Page",
       "bindings" : {
         "htmlTemplate" : "htmlTemplate",
         "propertyMap" : "_page_propertyMap"
@@ -34,7 +31,5 @@
   } ],
   "isas" : [ {
     "var" : "page"
-  } ],
-  "isLambda" : true,
-  "digest" : "KGJ6jLU/i3LkvWvR/1Bbtg=="
+  } ]
 }

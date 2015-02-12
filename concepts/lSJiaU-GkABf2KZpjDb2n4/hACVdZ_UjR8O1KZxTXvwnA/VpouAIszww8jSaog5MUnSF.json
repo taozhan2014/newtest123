@@ -3,7 +3,6 @@
   "name" : "ThreePlusFour",
   "category" : "eg",
   "parent" : "local://hACVdZ_UjR8O1KZxTXvwnA/",
-  "pname" : "Course 101",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -20,7 +19,6 @@
     "name" : "add",
     "expr" : {
       "concept" : "local://lYj6zM_lxu8B143dhrrd08/",
-      "conceptName" : "Example lambda concept showing addition",
       "bindings" : {
         "a" : "three",
         "b" : "four"
@@ -38,7 +36,5 @@
       }
     }
   } ],
-  "isas" : [ ],
-  "isLambda" : false,
-  "digest" : "tsTfLCRA2l0B4MFa5ouP/A=="
+  "isas" : [ ]
 }

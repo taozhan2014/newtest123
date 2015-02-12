@@ -3,12 +3,10 @@
   "name" : "Course Unit View",
   "category" : ".view",
   "parent" : "local://vKVuPLJ9zC82y44Ofqyf85/",
-  "pname" : "Course Unit",
   "flags" : "U",
   "lvars" : [ {
     "name" : "model",
-    "type" : "local://vKVuPLJ9zC82y44Ofqyf85/",
-    "typeName" : "Course Unit"
+    "type" : "local://vKVuPLJ9zC82y44Ofqyf85/"
   } ],
   "vars" : [ {
     "name" : "courseDetails",
@@ -30,7 +28,6 @@
     "name" : "page",
     "expr" : {
       "concept" : "/common/core/Xfh2VQ4HSK9klqbqqR-eBB/",
-      "conceptName" : "Mustache HTML Page",
       "bindings" : {
         "htmlTemplate" : "htmlTemplate",
         "propertyMap" : "_page_propertyMap"
@@ -39,7 +36,5 @@
   } ],
   "isas" : [ {
     "var" : "page"
-  } ],
-  "isLambda" : true,
-  "digest" : "7XmyXIMBNJCrtaf0WGaIcQ=="
+  } ]
 }

@@ -3,7 +3,6 @@
   "name" : "Unit 1: ",
   "category" : "unit",
   "parent" : "local://vKVuPLJ9zC82y44Ofqyf85/",
-  "pname" : "Course Unit",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -25,7 +24,6 @@
     "name" : "unit",
     "expr" : {
       "concept" : "local://vKVuPLJ9zC82y44Ofqyf85/",
-      "conceptName" : "Course Unit",
       "bindings" : {
         "name" : "_unit_name",
         "content" : "_unit_content",
@@ -35,7 +33,5 @@
   } ],
   "isas" : [ {
     "var" : "unit"
-  } ],
-  "isLambda" : false,
-  "digest" : "qsmrkhpwfec04kk6DDfiLw=="
+  } ]
 }

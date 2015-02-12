@@ -3,7 +3,6 @@
   "name" : "Course 102",
   "category" : "course",
   "parent" : "local://lSJiaU-GkABf2KZpjDb2n4/",
-  "pname" : "Root Concept for univ",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -25,7 +24,6 @@
     "name" : "course",
     "expr" : {
       "concept" : "local://GWUiaDKhGKAJsKG1W9fqV0/",
-      "conceptName" : "Course",
       "bindings" : {
         "number" : "_course_number",
         "name" : "_course_name",
@@ -35,7 +33,5 @@
   } ],
   "isas" : [ {
     "var" : "course"
-  } ],
-  "isLambda" : false,
-  "digest" : "eP3/1VDH2MyZuq6KGpZp4g=="
+  } ]
 }

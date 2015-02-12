@@ -3,12 +3,10 @@
   "name" : "Course Reader View",
   "category" : ".view",
   "parent" : "local://E40ZSmDZ3q89eafTdvRjvC/",
-  "pname" : "Course Reader",
   "flags" : "U",
   "lvars" : [ {
     "name" : "model",
-    "type" : "local://E40ZSmDZ3q89eafTdvRjvC/",
-    "typeName" : "Course Reader"
+    "type" : "local://E40ZSmDZ3q89eafTdvRjvC/"
   } ],
   "vars" : [ {
     "name" : "htmlTemplate",
@@ -25,7 +23,6 @@
     "name" : "page",
     "expr" : {
       "concept" : "/common/core/Xfh2VQ4HSK9klqbqqR-eBB/",
-      "conceptName" : "Mustache HTML Page",
       "bindings" : {
         "htmlTemplate" : "htmlTemplate",
         "propertyMap" : "_page_propertyMap"
@@ -34,7 +31,5 @@
   } ],
   "isas" : [ {
     "var" : "page"
-  } ],
-  "isLambda" : true,
-  "digest" : "Jpj34XRFazWc9tFT7b8jBA=="
+  } ]
 }

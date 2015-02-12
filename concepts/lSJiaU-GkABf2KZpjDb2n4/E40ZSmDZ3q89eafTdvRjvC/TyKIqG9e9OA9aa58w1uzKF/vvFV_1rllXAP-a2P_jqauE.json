@@ -3,7 +3,6 @@
   "name" : "local://TyKIqG9e9OA9aa58w1uzKF/_thumbnail",
   "category" : "",
   "parent" : "local://TyKIqG9e9OA9aa58w1uzKF/",
-  "pname" : "Course 101 Reader",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -30,7 +29,6 @@
     "name" : "resource",
     "expr" : {
       "concept" : "/common/core/BLTv0pGnFoAPG4Q4YV8KS1/",
-      "conceptName" : "Attachment Resource",
       "bindings" : {
         "type" : "type",
         "attachmentLink" : "attachmentLink",
@@ -41,7 +39,5 @@
   } ],
   "isas" : [ {
     "var" : "resource"
-  } ],
-  "isLambda" : false,
-  "digest" : "OEt+jbgmW+9ZT9GNisklZA=="
+  } ]
 }

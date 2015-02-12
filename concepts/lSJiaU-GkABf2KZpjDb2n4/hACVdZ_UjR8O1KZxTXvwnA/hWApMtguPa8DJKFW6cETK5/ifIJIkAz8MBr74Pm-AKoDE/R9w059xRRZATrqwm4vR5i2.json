@@ -30,6 +30,5 @@
   "isas" : [ {
     "var" : "page"
   } ],
-  "isLambda" : false,
-  "digest" : "X1i29iXPZGpgnMP9AcPOGw=="
+  "isLambda" : false
 }

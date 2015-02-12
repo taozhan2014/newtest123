@@ -3,7 +3,6 @@
   "name" : "James Gosling v1",
   "category" : "",
   "parent" : "local://bzFHwq_M87AKsK0rbixETB/",
-  "pname" : "Unit 3: Simple properties and concepts",
   "flags" : "U",
   "lvars" : [ ],
   "vars" : [ {
@@ -35,7 +34,5 @@
       "strEditMode" : ""
     }
   } ],
-  "isas" : [ ],
-  "isLambda" : false,
-  "digest" : "II7ABg/+xBH3VdL02OAtbg=="
+  "isas" : [ ]
 }

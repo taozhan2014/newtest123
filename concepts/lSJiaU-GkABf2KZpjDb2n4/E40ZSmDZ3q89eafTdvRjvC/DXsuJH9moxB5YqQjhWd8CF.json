@@ -45,6 +45,5 @@
   "isas" : [ {
     "var" : "reader"
   } ],
-  "isLambda" : false,
-  "digest" : "WryimYI4H/MYR4GuzVrDyg=="
+  "isLambda" : false
 }

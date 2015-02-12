@@ -24,6 +24,5 @@
   "isas" : [ {
     "var" : "courseIndex"
   } ],
-  "isLambda" : false,
-  "digest" : "VAj6bHWzbHz397ycDwED7A=="
+  "isLambda" : false
 }
